@@ -10,9 +10,9 @@ Trolls have no use of dollars and cents. You need to know about toll currency. U
 
 **About Troll Curcuncy:** 
 
-1Ȼ is 1 troll rock candy, the smallest division of currency 
-100 Rock Candies = 1 Gold Ring (AuR) : 10Ȼ = 1AuR
-100 Gold Rings = 1 Goat (GT) : 100AuR = 1 GT
+- 1Ȼ is 1 troll rock candy, the smallest division of currency 
+- 100 Rock Candies = 1 Gold Ring (AuR) : 10Ȼ = 1AuR
+- 100 Gold Rings = 1 Goat (GT) : 100AuR = 1 GT
 
 ## The Tech
 
