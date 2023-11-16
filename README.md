@@ -1,8 +1,18 @@
-# Bridge Troll Revenue Optimizer
+# Bridge Troll Toll 
 
 ## Week 7 Large group project
 
-The goal of this app is to provide a platform for bridge toll operators to optimize their revenue by analyzing toll collection data. The app will utilize the Auckland Transport API to fetch real-time data on bridges, allowing toll operators to assess the best times of the day and other factors influencing toll collection.
+The goal of this app is to provide a platform for bridge troll toll operators to make informed deicions on which bridge to live under and optimise their toll revenue by anaylising live data from the **Waka Kotahi: Auckland Traffic API**. You can use the API to fetch real-time data on bridges, allowing toll operators to assess the best times of the day and other factors influencing toll collection. Measure in Gold teeth 
+
+## Domain Knowledge
+
+Trolls have no use of dollars and cents. You need to know about toll currency. Usually troll toll charges around 5 rock candies per car crossing a bridge. Usually payment is automated using the cars liences plates. Some drivers pay ahead. 
+
+**About Troll Curcuncy:** 
+
+1Ȼ is 1 troll rock candy, the smallest division of currency 
+100 Rock Candies = 1 Gold Ring (AuR) : 10Ȼ = 1AuR
+100 Gold Rings = 1 Goat (GT) : 100AuR = 1 GT
 
 ## The Tech
 
@@ -13,23 +23,33 @@ A Boilerplate is already set up for you with everything you will need to get sta
 * [Express](https://expressjs.com/en/api.html)
 * [Knex.js](https://knexjs.org/)
 * [Sass](https://sass-lang.com/)
+* Auth? 
 
-Additionally, the app utilizes the Auckland Transport API to fetch real-time data on bridges and tolls.
+Additionally, the app will use the [Auckland Transport API](https://nzta.govt.nz/traffic-and-travel-information/use-our-data/about-the-apis/auckland-traffic-api/) to fetch real-time data on bridges and tolls.
 
 ## User Stories
 
 ### MVP
 
-As a toll operator:
-* I want to view a list of bridges and their toll collection data.
-* I want to analyze toll collection trends based on different times of the day.
-* I want to identify peak hours for each bridge to maximize revenue.
+As a troll toll operator:
+* I want to view a list of bridges in Auckland and their stats
+* I want to see an average estimate of how much toll can be collected per hour.
+
+As a registered troll toll operator user:  
+* I want to be able to log in to my account
+* I want to be able to save my favourite bridges 
+
 
 ### Stretch
 
 As a toll operator:
 * I want to receive automated recommendations for adjusting toll rates during peak hours.
 * I want to compare toll revenue between different bridges.
+
+
+### Stretchier Stretch
+* I want to analyze toll collection trends based on different times of the day through visualisations.
+* I want to identify peak hours for each bridge to maximize revenue through visualisation.
 
 ---
 
@@ -41,6 +61,7 @@ As a toll operator:
 | Register | View for the toll operator to sign up |
 | Home | Welcome toll operators and links to the app|
 | Bridges | Display a list of bridges with toll collection data |
+| My Bridges | Display a list of bridges with toll collection data saved by the user|
 | Analytics | Provide tools to analyze toll collection trends |
 
 ## API (Client - Server)
@@ -81,9 +102,7 @@ Write and display the structure of the data
 
 ## Authentication
 
-Authentication is already set up in this project using the node module [authenticare](https://www.npmjs.com/package/authenticare). Users are currently able to login, logout, and register, and all user information will be stored in a table in our database.
-
-If you wish to dive deeper on authenticare, docs are available [here](https://github.com/enspiral-dev-academy/authenticare/tree/main/docs). Of particular note are `getEncodedToken` and `getTokenDecoder` as they deal with how you add a token to your request and secure server routes respectively.
+Follow the setting-up-auth.md document in this repo to set up auth. 
 
 ---
 
