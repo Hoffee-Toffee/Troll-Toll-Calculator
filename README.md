@@ -1,10 +1,8 @@
-# Bridge Troll Toll Calculator
+# Bridge Troll Revenue Optimizer
 
 ## Week 7 Large group project
 
-The focus of this app is to practice using the Full Stack we teach, (with auth in place) in a large scale app.
-
-The idea of the app is to provide a platform for calculating tolls for various bridges using the Auckland Transport API. Users can log in, input their route details, and the app will calculate the toll based on the selected bridge.
+The goal of this app is to provide a platform for bridge toll operators to optimize their revenue by analyzing toll collection data. The app will utilize the Auckland Transport API to fetch real-time data on bridges, allowing toll operators to assess the best times of the day and other factors influencing toll collection.
 
 ## The Tech
 
@@ -22,21 +20,16 @@ Additionally, the app utilizes the Auckland Transport API to fetch real-time dat
 
 ### MVP
 
-As a non-registered user:
-* I want to view a list of bridges.
-* I want to select a bridge and input my route details.
-* I want to see the calculated toll for my route.
-
-As a registered user:
-* I want to save my favorite routes.
-* I want to track my toll expenses.
-* I want to receive notifications for special toll discounts.
+As a toll operator:
+* I want to view a list of bridges and their toll collection data.
+* I want to analyze toll collection trends based on different times of the day.
+* I want to identify peak hours for each bridge to maximize revenue.
 
 ### Stretch
 
-As a registered user:
-* I want to compare toll rates between different bridges.
-* I want to receive personalized suggestions for the most cost-effective routes.
+As a toll operator:
+* I want to receive automated recommendations for adjusting toll rates during peak hours.
+* I want to compare toll revenue between different bridges.
 
 ---
 
@@ -44,22 +37,21 @@ As a registered user:
 
 | name | purpose |
 | --- | --- |
-| Login | View for the user to enter their login credentials |
-| Register | View for the user to sign up |
-| Home | Welcome users and links to the app|
-| Bridges | Display a list of bridges |
-| Calculator | Input route details and view calculated tolls |
+| Login | View for the toll operator to enter their login credentials |
+| Register | View for the toll operator to sign up |
+| Home | Welcome toll operators and links to the app|
+| Bridges | Display a list of bridges with toll collection data |
+| Analytics | Provide tools to analyze toll collection trends |
 
 ## API (Client - Server)
 
 | Method | Endpoint | Protected | Usage | Response |
 | --- | --- | --- | --- | --- |
-| Post | /api/v1/auth/login | Yes | Log In a User | The Users JWT Token |
-| Post | /api/v1/auth/register | Yes | Register a User | The Users JWT Token |
-| Get | /api/v1/bridges | No | Get all bridges | Array of Bridge Objects |
-| Post | /api/v1/tolls/calculate | Yes | Calculate toll for a route | Calculated Toll Amount |
-| Get | /api/v1/user/routes | Yes | Get user's saved routes | Array of Saved Routes |
-| Post | /api/v1/user/routes/save | Yes | Save a route for a user | 201 status code |
+| Post | /api/v1/auth/login | Yes | Log In a Toll Operator | The Toll Operator's JWT Token |
+| Post | /api/v1/auth/register | Yes | Register a Toll Operator | The Toll Operator's JWT Token |
+| Get | /api/v1/bridges | No | Get all bridges with toll collection data | Array of Bridge Objects with Toll Data |
+| Get | /api/v1/tolls/analytics | Yes | Get analytics data for toll collection | Analytical Data for Optimization |
+| Post | /api/v1/tolls/rate-adjust | Yes | Adjust toll rates for optimal revenue | 201 status code |
 
 ## DB (Server Side)
 
@@ -76,17 +68,16 @@ Write and display the structure of the data
 | yearBuilt | integer | Year the bridge was built |
 | lengthMeters | string | Length of the bridge in meters |
 | lanes | integer | Number of lanes on the bridge |
-| addedByUser | string | User who added the bridge data |
+| addedByUser | string | Toll operator who added the bridge data |
 
-### User Routes
+### Toll Analytics
 
 | Column Name | Data Type | Purpose |
 | --- | --- | --- |
-| id | integer | Unique identifier for each saved route |
-| userId | integer | User ID associated with the route |
-| bridgeId | integer | Bridge ID associated with the route |
-| routeDetails | object | Details of the saved route |
-| dateSaved | date | Date when the route was saved |
+| id | integer | Unique identifier for each toll analytics entry |
+| bridgeId | integer | Bridge ID associated with the toll data |
+| timestamp | date/time | Date and time of the toll collection |
+| revenue | decimal | Amount of revenue collected during the toll |
 
 ## Authentication
 
