@@ -52,6 +52,7 @@ As a toll operator:
 * I want to identify peak hours for each bridge to maximize revenue through visualisation.
 
 ---
+*Here is some starter documentation to get things going:* 
 
 ## Views (Client Side)
 
@@ -76,7 +77,7 @@ As a toll operator:
 
 ## DB (Server Side)
 
-Write and display the structure of the data
+Here is a start on your database you can update these in your documentation.
 
 ### Bridges
 
