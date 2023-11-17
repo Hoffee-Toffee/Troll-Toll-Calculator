@@ -16,14 +16,12 @@ export default function Bridges() {
     return <p>Fetching bridges from auckland...</p>
   }
 
-  console.log(bridges)
-
   return (
     <>
       <h1>Bridge Toll Calculater</h1>
       <ul>
-        {bridges.map((bridge) => {
-          return <li>{bridge.name}</li>
+        {bridges.map((br) => {
+          return <li>{br.name}</li>
         })}
       </ul>
     </>
