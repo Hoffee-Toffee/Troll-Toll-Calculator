@@ -6,7 +6,7 @@ The goal of this app is to provide a platform for bridge troll toll operators to
 
 ## Domain Knowledge
 
-Trolls have no use of dollars and cents. You need to know about toll currency. Usually troll toll charges around 5 rock candies per car crossing a bridge. Usually payment is automated using the cars liences plates. Some drivers pay ahead. 
+Trolls have no use of dollars and cents. You need to know about troll currency. Usually troll toll charges around 5 rock candies per car crossing a bridge. Usually payment is automated using the cars liences plates. Some drivers pay ahead. 
 
 **About Troll Curcuncy:** 
 
