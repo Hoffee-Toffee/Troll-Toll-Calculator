@@ -9,15 +9,13 @@ const router = express.Router()
 // GET /api/v1/bridges
 router.get('/', async (req, res) => {
   try {
-    const fruits = await db.getBridges()
+    const bridges = await db.getBridges()
 
-    res.json({ fruits })
+    res.json(bridges)
   } catch (error) {
     console.error(error)
     res.status(500).send('Something went wrong')
   }
 })
-
-
 
 export default router
