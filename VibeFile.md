@@ -3,7 +3,7 @@
 The role of this document is to be a record vibes, as described in the Group Project.
 Specifically to “discussions about your stress profiles, articulate your learning goals, and define roles within the team”. Not everything will be entered into this page but just a brief record that a conversation has been had. 
 
-**Team Members	| Roles	**
+**Team Members**	| **Roles	**
 __________________________________
 | Blue       	| Product Owner	    |
 | Keeley   		| Scrum Facilitator	|
