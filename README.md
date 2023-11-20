@@ -6,6 +6,8 @@ The cost of living is on the rise, and house prices are skyrocketing. Fortunatel
 
 The goal of this app is to provide a platform for Auckland-based bridge troll toll-takers to make informed decisions on which bridge to live under and optimize their toll revenue by analyzing live data from sources such as **Waka Kotahi: Auckland Traffic API**. You can use this or similar APIs to fetch real-time data on/near bridge locations, allowing toll operators to assess the best times of the day for collections and other factors influencing toll collection.
 
+The extended timeframe for this project presents an opportunity for comprehensive planning and a deeper understanding of how you collaborate in groups. Use this time wisely to engage in discussions about your stress profiles, articulate your learning goals, and define roles within the team. Consider incorporating proper wireframes or designs using tools such as Figma, and take advantage of this phase to craft thorough documentation for the project. This strategic approach will not only enhance the efficiency of your teamwork but also contribute to the overall success of the project.  
+
 ## Domain Knowledge
 
 Trolls have no use for our dollars and cents. You need to know about troll currency to display information that is useful to them. Usually, a troll toll charge is around 5 rock candies per vehicle crossing a bridge. Usually, payment is automated using the cars' license plates. Some drivers pay ahead. 
@@ -15,6 +17,8 @@ Trolls have no use for our dollars and cents. You need to know about troll curre
 - 1Ȼ is 1 troll rock candy, the smallest division of currency 
 - 100 Rock Candies = 1 Gold Ring (AuR) : 10Ȼ = 1AuR
 - 100 Gold Rings = 1 Goat (GT) : 100AuR = 1 GT
+
+It would be wise to consider the troll client when building the app, they are known to be tough customers. 
 
 ## The Tech
 
@@ -32,6 +36,15 @@ There is already some started data in the database on the Auckland bridges (you 
 Additionally, the app can use APIs such as the [Auckland Transport API](https://nzta.govt.nz/traffic-and-travel-information/use-our-data/about-the-apis/auckland-traffic-api/) to fetch real-time data on bridges. 
 
 *Please note: The AT API documentation is a little hard to access, if it seems too hard we can pivot to help the Christchurch- based trolls.* 
+
+## Roles
+
+* Team Lead - Gaby 
+* Scrum Facilitator 
+* Vibe Watcher
+* Product Owner
+* Git Keeper
+
 
 ## User Stories
 
