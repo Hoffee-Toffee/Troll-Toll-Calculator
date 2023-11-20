@@ -82,7 +82,7 @@ As a registered toll operator user:
 ---
 ## Documentation
 
-*Here is some starter documentation to get things going, you will update this as a team at the start of the project and as you go:* 
+*Here is some starter documentation to get things going, you will update this as a team at the start of the project and as you go on Github wiki. You will also be required to create a database diagram:* 
 
 ### Views (Client Side)
 
