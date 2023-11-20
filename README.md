@@ -29,7 +29,7 @@ A Boilerplate is already set up for you with everything you will need to get sta
 * [Express](https://expressjs.com/en/api.html)
 * [Knex.js](https://knexjs.org/)
 * [Sass](https://sass-lang.com/)
-* [Auth0]([https://auth0.com/](https://oauth.net/2/))   
+* [Auth0](https://auth0.com/)   
 
 There is already some started data in the database on the Auckland bridges (you may wish to add more fields as you go or if you wish to add data from external APIs). 
 
