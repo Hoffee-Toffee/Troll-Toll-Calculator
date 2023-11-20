@@ -48,6 +48,8 @@ Additionally, the app can use APIs such as the [Auckland Transport API](https://
 
 ## User Stories
 
+*The product owner and team might have reason to change/update these to align with client needs or available data. Please make sure you confirm with your team lead (Gaby) first.*
+
 ### MVP
 
 As a non-registered troll toll operator:
