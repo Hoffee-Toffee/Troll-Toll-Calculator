@@ -41,7 +41,7 @@ Additionally, the app can use APIs such as the [Auckland Transport API](https://
 
 * Team Lead - Gaby (I will be setting up the team, doing code reviews and sending issues on github) 
 * Scrum Facilitator - Ming/ Keeley
-* Vibe Watcher- Vibes
+* Vibe Watcher- Anthony
 * Product Owner- Blue
 * Git Keeper- Sofia
 
