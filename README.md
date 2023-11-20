@@ -59,7 +59,8 @@ As a non-registered troll toll operator:
 
 As a registered troll toll operator user:  
 * I want to be able to log in to my account set up using auth
-* I want to be able to save my favourite bridges 
+* I want to be able to save my favourite bridges
+* I want to set one bridge as my active-bridge and log every time I take a toll 
 
 
 ### Stretch
@@ -76,7 +77,8 @@ As a registered toll operator user:
 * I want to analyze toll collection trends based on different times of the day through visualisations.
 * I want to identify peak hours for each bridge to maximize revenue through visualisation.
 * I want to receive automated recommendations for adjusting toll rates during peak hours.
-* I want to see any other live analytics that might increase toll revenue and how they trend over time. 
+* I want to see any other live analytics that might increase toll revenue and how they trend over time.
+* I want to automate every time I would take a toll at my current active bridge. 
 
 
 ---
