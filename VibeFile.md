@@ -14,7 +14,7 @@ Specifically to “discussions about your stress profiles, articulate your learn
 | Anthony		    | Vibes Watcher    	| 
 
 
-Daily Check In - 21/11/2023
+**Daily Check In - 21/11/2023**
 
 |**Blue**    | Notes      |
 |------------|------------|
@@ -23,174 +23,202 @@ Daily Check In - 21/11/2023
 |Challenges 	|            |
 |Requests	   |            |
 
-**Keeley**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Keeley** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Ming**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Ming** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Tristan**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Tristan** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Sofia**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Sofia** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**James**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**James** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Anthony**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Anthony** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
 
 Daily Check In - 22/11/2023
 
-**Blue**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests	  |
+|**Blue**    | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Keeley**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Keeley** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Ming**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Ming** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Tristan**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Tristan** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Sofia**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Sofia** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**James**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**James** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Anthony**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Anthony** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
 Daily Check In - 23/11/2023
 
-**Blue**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests	  |
 
-**Keeley**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Blue**    | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Ming**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Keeley** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Tristan**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Ming** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Sofia**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Tristan** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**James**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Sofia** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Anthony**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**James** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
+|**Anthony** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
 Daily Check In - 24/11/2023
 
-**Blue**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests	  |
 
-**Keeley**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Blue**    | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Ming**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Keeley** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Tristan**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Ming** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Sofia**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Tristan** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**James**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**Sofia** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
-**Anthony**
-Good Vibes	|
-Bad Vibes  	|
-Challenges 	|
-Requests  	|
+|**James** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
+
+|**Anthony** | Notes      |
+|------------|------------|
+|Good Vibes 	|            |
+|Bad Vibes  	|            |
+|Challenges 	|            |
+|Requests	   |            |
 
 
