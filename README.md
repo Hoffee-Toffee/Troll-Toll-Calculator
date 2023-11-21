@@ -115,11 +115,11 @@ e.g.
 
 | name | MVP | purpose |
 | --- | --- | --- |
-| Login | No | View for the toll operator to enter their login credentials |
-| Register | No | View for the toll operator to sign up |
 | Home | Yes | Welcomes troll toll operators and links to the app (to all bridges) and sign in for stretch|
 | Bridges | Yes | Display a list of bridges with toll collection data |
 | Bridge | Yes | Display a single bridge using it's id with it's data |
+| Login | No | View for the toll operator to enter their login credentials |
+| Register | No | View for the toll operator to sign up |
 | My Bridges | No | Display a list of favourite bridges saved by the user and active bridge|
 | Analytics | No | Provide tools to analyze toll collection trends |
 
