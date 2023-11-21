@@ -54,6 +54,7 @@ Additionally, the app can use APIs such as the [Auckland Transport API](https://
 
 As a non-registered troll toll operator:
 * I want to view a list of bridges in Auckland and their stats
+* I want to view a single bridge with all it's data
 * I want to see an average estimate (this can be made up) of how much toll a bridge-troll can be collect for each bridge using any sources to collect or estimate this data.
 
 ### Stretch
@@ -61,10 +62,13 @@ As a non-registered troll toll operator:
 As a registered troll toll operator user:  
 * I want to be able to log in to my account set up using auth
 * I want to be able to save my favourite bridges
-* I want to set one bridge as my active-bridge and log every time I take a toll 
-* I want to see real live traffic data for each bridge 
-* I want to compare toll revenue between different bridges.
-* I want to see any other live analytics that might increase toll revenue
+* I want to set one bridge as my active-bridge, and no other troll can set it
+* I want to log each time I take a toll
+
+### External API Stretch 
+As a registered toll operator user:
+* I want to see real live traffic data for each bridge
+* I want to see how the traffic data influences how much money each bridge (this will replace the estimate in the MVP)
 
 
 ### Stretchier Stretch
@@ -75,7 +79,6 @@ As a registered toll operator user:
 * I want to receive automated recommendations for adjusting toll rates during peak hours.
 * I want to see any other live analytics that might increase toll revenue and how they trend over time.
 * I want to automate every time I would take a toll at my current active bridge. 
-
 
 ---
 ## Documentation
@@ -90,7 +93,8 @@ As a registered toll operator user:
 | Register | View for the toll operator to sign up |
 | Home | Welcome toll operators and links to the app|
 | Bridges | Display a list of bridges with toll collection data |
-| My Bridges | Display a list of bridges with toll collection data saved by the user|
+| Bridge | Display a single bridge using it's id with it's data |
+| My Bridges | Display a list of favourite bridges saved by the user and active bridge|
 | Analytics | Provide tools to analyze toll collection trends |
 
 ### API (Client - Server)
@@ -99,9 +103,10 @@ As a registered toll operator user:
 | --- | --- | --- | --- | --- |
 | Post | /api/v1/auth/login | Yes | Log In a Toll Operator | The Toll Operator's JWT Token |
 | Post | /api/v1/auth/register | Yes | Register a Toll Operator | The Toll Operator's JWT Token |
-| Get | /api/v1/bridges | No | Get all bridges with toll collection data | Array of Bridge Objects with Toll Data |
-| Get | /api/v1/tolls/analytics | Yes | Get analytics data for toll collection | Analytical Data for Optimization |
-| Post | /api/v1/tolls/rate-adjust | Yes | Adjust toll rates for optimal revenue | 201 status code |
+| Get | /api/v1/bridges | No | Get all bridges with toll collection data | Array of Bridge Objects |
+| Get | /api/v1/bridges/:id | No | Get one bridge with sats and toll collection data | Single Bridge Data |
+| Get | /api/v1/bridges/fav | Yes | Get the list of favourite bridges a user has saved | Array of ints (int = an id) |
+| Post | /api/v1/bridges/fav | Yes | Add a saved favourite bridge to the db | 201 status code |
 
 ### DB (Server Side)
 
@@ -118,15 +123,18 @@ Here is a start on your database you can update these in your documentation. The
 | yearBuilt | integer | Year the bridge was built |
 | lengthMeters | string | Length of the bridge in meters |
 | lanes | integer | Number of lanes on the bridge |
-| addedByUser | string | Toll operator who added the bridge data |
+| addedByUser | string | Troll toll operator who added the bridge data (auth0_id) |
 
-### Users - not set up
+### Users/ Trolls - not set up
 
 | Column Name | Data Type | Purpose |
 | --- | --- | --- |
 | id | integer | Unique identifier for each user |
+| email| string | used to log in to account |
+| first-name | string| trolls first name |
+| last-name |string | troll's last name |
+| auth0_id | string | Unique identifier used for auth supplied by auth0 when set up |
 
-// add any auth data here //
 
 ### Favourite Bridges (Many to Many / join table) - not set up
 
@@ -136,7 +144,7 @@ Here is a start on your database you can update these in your documentation. The
 | user_id | integer | Which user saved the bridge |
 | bridge_id | integer | Which bridge was saved |
 
-### Toll Analytics - not set up yet
+### Toll Collected - not set up yet
 
 | Column Name | Data Type | Purpose |
 | --- | --- | --- |
@@ -144,6 +152,8 @@ Here is a start on your database you can update these in your documentation. The
 | bridgeId | integer | Bridge ID associated with the toll data |
 | timestamp | date/time | Date and time of the toll collection |
 | revenue | decimal | Amount of revenue collected during the toll |
+
+Database on toll analytics are up to you! 
 
 ## Authentication
 
