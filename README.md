@@ -212,7 +212,7 @@ Returns:
 ```json
 [
   {
-    "tollId": 1,
+    "id": 1,
     "bridgeId": 1,
     "timestamp": 1495083077243,
     "revenue": 2.39,
