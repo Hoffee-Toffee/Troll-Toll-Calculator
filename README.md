@@ -99,14 +99,17 @@ Make sure that:
 - that Types are used where applicable, and any Type issues should be resolved
 - user-facing updates (front end/ css crew) should be checked for accessibility concerns (using the WAVE tool)
 
-## Function naming convention
+## Naming conventions
 
-Be descriptive in each function name, reference the particular layer of the stack.
+Be descriptive in each function/component name, reference the particular layer of the stack.
 
 e.g. 
-getAllBridgesDB()
-getAllBridgesApi()
-updateBridgeMutation()
+- getAllBridgesDB()
+- getAllBridgesApi()
+- updateBridgeMutation()
+- BridgesList.tsx
+- FavouriteBridges.tsx
+
 
 ### Views (Client Side)
 
