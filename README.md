@@ -55,7 +55,7 @@ Additionally, the app can use APIs such as the [Auckland Transport API](https://
 As a non-registered troll toll operator:
 * I want to view a list of bridges in Auckland and their stats
 * I want to view a single bridge with all it's data
-* I want to see an average estimate (this can be made up) of how much toll a bridge-troll can be collect for each bridge using any sources to collect or estimate this data.
+* I want to see an average estimate (this can be made up) of how much toll (in troll money) a bridge-troll can collect for each bridge using any sources to collect or estimate this data.
 
 ### Stretch
 
@@ -68,7 +68,7 @@ As a registered troll toll operator user:
 ### External API Stretch 
 As a registered toll operator user:
 * I want to see real live traffic data for each bridge
-* I want to see how the traffic data influences how much money each bridge (this will replace the estimate in the MVP)
+* I want to see how the traffic data influences how much troll money can be made at each bridge (this will replace the estimate in the MVP)
 
 
 ### Stretchier Stretch
