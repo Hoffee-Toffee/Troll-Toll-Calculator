@@ -18,4 +18,17 @@ router.get('/', async (req, res) => {
   }
 })
 
+// GET /api/v1/bridges/:id
+
+router.get('/:id', async (req, res) => {
+  const bridgeId = Number(req.params.id)
+  try {
+    const bridge = await db.getBridges(bridgeId)
+    res.json(bridge)
+  } catch (error) {
+    console.error(error)
+    res.status(500).send('Something went wrong')
+  }
+})
+
 export default router
