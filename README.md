@@ -45,7 +45,6 @@ Additionally, the app can use APIs such as the [Auckland Transport API](https://
 * Product Owner- Blue
 * Git Keeper- Sofia
 
-
 ## User Stories
 
 *The product owner and team might have reason to change/update these to align with client needs or available data. Please make sure you confirm with your team lead (Gaby) first.*
@@ -69,7 +68,6 @@ As a registered troll toll operator user:
 As a registered toll operator user:
 * I want to see real live traffic data for each bridge
 * I want to see how the traffic data influences how much troll money can be made at each bridge (this will replace the estimate in the MVP)
-
 
 ### Stretchier Stretch
 
@@ -131,8 +129,8 @@ Here is a start on your database you can update these in your documentation. The
 | --- | --- | --- |
 | id | integer | Unique identifier for each user |
 | email| string | used to log in to account |
-| first-name | string| trolls first name |
-| last-name |string | troll's last name |
+| first_name | string| trolls first name |
+| last_name |string | troll's last name |
 | auth0_id | string | Unique identifier used for auth supplied by auth0 when set up |
 
 
