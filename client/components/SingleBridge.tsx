@@ -54,12 +54,6 @@ export default function SingleBridge() {
   console.log(bridge[0].length_meters)
   return (
     <>
-      <button>
-        <Link to={'/'}>Home</Link>
-      </button>
-      <button>
-        <Link to="/bridges">Bridge List</Link>
-      </button>
       <h1>{bridge[0].name}</h1>
 
       <p>Type: {bridge[0].name}</p>
