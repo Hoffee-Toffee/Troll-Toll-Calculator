@@ -99,6 +99,15 @@ Make sure that:
 - that Types are used where applicable, and any Type issues should be resolved
 - user-facing updates (front end/ css crew) should be checked for accessibility concerns (using the WAVE tool)
 
+## Function naming convention
+
+Be descriptive in each function name, reference the particular layer of the stack.
+
+e.g. 
+getAllBridgesDB()
+getAllBridgesApi()
+updateBridgeMutation()
+
 ### Views (Client Side)
 
 | name | MVP | purpose |
@@ -119,8 +128,8 @@ Make sure that:
 | Post*| /api/v1/auth/register | Yes | Register a Toll Operator | The Toll Operator's JWT Token |
 | Get | /api/v1/bridges | No | Get all bridges with toll collection data | Array of Bridge Objects |
 | Get | /api/v1/bridges/:id | No | Get one bridge with sats and toll collection data | Single Bridge Data |
-| Get | /api/v1/bridges/fav | Yes | Get the list of favourite bridges a user has saved | Array of ints (int = an id) |
-| Post | /api/v1/bridges/fav | Yes | Add a saved favourite bridge to the db | 201 status code |
+| Get* | /api/v1/bridges/fav | Yes | Get the list of favourite bridges a user has saved | Array of ints (int = an id) |
+| Post* | /api/v1/bridges/fav | Yes | Add a saved favourite bridge to the db | 201 status code |
 
 Endpoints with a * are stretch
 
