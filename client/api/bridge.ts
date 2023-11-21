@@ -8,7 +8,7 @@ export async function getBridgesApi(): Promise<Bridge[]> {
   return res.body
 }
 
-export async function getBridgeApi(id: number): Promise<Bridge> {
+export async function getSingleBridgeApi(id: number): Promise<Bridge> {
   const res = await request.get(`${bridgeURL}/${id}`)
   return res.body
 }

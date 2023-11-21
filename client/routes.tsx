@@ -9,6 +9,6 @@ export const routes = createRoutesFromElements(
   <Route path="/" element={<App />}>
     <Route index element={<Home />} />
     <Route path="bridges" element={<Bridges />} />
-    <Route path="bridges/:id" element={<SingleBridge />} />
+    <Route path="bridge/:id" element={<SingleBridge />} />
   </Route>
 )
