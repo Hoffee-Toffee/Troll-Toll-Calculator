@@ -55,7 +55,6 @@ Additionally, the app can use APIs such as the [Auckland Transport API](https://
 As a non-registered troll toll operator:
 * I want to view a list of bridges in Auckland and their stats
 * I want to see an average estimate of how much toll a bridge-troll can be collect for each bridge using any sources to collect or estimate this data.
-* I want to use the bridge stats provided to influence the toll estimates
 
 As a registered troll toll operator user:  
 * I want to be able to log in to my account set up using auth
