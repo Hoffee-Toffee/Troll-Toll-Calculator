@@ -4,7 +4,11 @@ export default function Home() {
   return (
     <>
       <h1>Trollololololo!!!</h1>
-      <Link to="/bridges">Link</Link>
+      <button>Log In</button>
+      <button>Sign Up</button>
+      <button>
+        <Link to="/bridges">Bridge List</Link>
+      </button>
     </>
   )
 }
