@@ -83,6 +83,14 @@ As a registered toll operator user:
 
 *Here is some starter documentation to get things going, you will update this as a team at the start of the project and as you go on Github wiki. You will also be required to create a database diagram:* 
 
+## Workflow
+
+- Use the KANBAN to assign yourself a task, post comments in the tickets to describe what needs to be done/what you are working on.
+- Move the tickets along the KANBAN as you progress.
+- When you're ready to commit new changes, first commit to your branch create a pull request to dev. Tell Sofia when that's done and it will be finalised with Gaby.
+- When your changes are committed to the dev branch by Gaby, Sofia will make sure to communicate to everyone to pull the latest changes from dev.
+
+
 ## Git workflow
 
 Branch structure:
@@ -104,12 +112,18 @@ Make sure that:
 Be descriptive in each function/component name, reference the particular layer of the stack.
 Note, more specific naming conventions to come.
 
-e.g. 
+Function names: 
 - getAllBridgesDb()
 - getAllBridgesApi()
+- getBridgeApi()
 - useBridgeMutation()
+
+Component names
 - BridgesList.tsx
 - FavouriteBridges.tsx
+- SingleBridge.tsx
+- Home.tsx
+- App.tsx
 
 
 ### Views (Client Side)
