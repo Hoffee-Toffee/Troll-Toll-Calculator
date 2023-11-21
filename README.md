@@ -87,15 +87,15 @@ As a registered toll operator user:
 
 ### Views (Client Side)
 
-| name | purpose |
-| --- | --- |
-| Login | View for the toll operator to enter their login credentials |
-| Register | View for the toll operator to sign up |
-| Home | Welcome toll operators and links to the app|
-| Bridges | Display a list of bridges with toll collection data |
-| Bridge | Display a single bridge using it's id with it's data |
-| My Bridges | Display a list of favourite bridges saved by the user and active bridge|
-| Analytics | Provide tools to analyze toll collection trends |
+| name | MVP | purpose |
+| --- | --- | --- |
+| Login | No | View for the toll operator to enter their login credentials |
+| Register | No | View for the toll operator to sign up |
+| Home | Yes | Welcome toll operators and links to the app|
+| Bridges | Yes | Display a list of bridges with toll collection data |
+| Bridge | Yes | Display a single bridge using it's id with it's data |
+| My Bridges | No | Display a list of favourite bridges saved by the user and active bridge|
+| Analytics | No | Provide tools to analyze toll collection trends |
 
 ### API (Client - Server)
 
