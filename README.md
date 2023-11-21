@@ -114,6 +114,8 @@ Note, more specific naming conventions to come.
 
 Function names: 
 - getAllBridgesDb()
+- getFavBridgesDb()
+- addFavBridgeDb()
 - getAllBridgesApi()
 - getBridgeApi()
 - useBridgeMutation()
