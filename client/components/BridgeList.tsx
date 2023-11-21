@@ -20,9 +20,7 @@ export default function BridgesList() {
   return (
     <>
       <h1>Bridge Toll Calculater</h1>
-      <button>
-        <Link to={'/'}>Home</Link>
-      </button>
+
       <ul>
         {bridges.map((bridge, index) => {
           return (

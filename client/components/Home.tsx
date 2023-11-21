@@ -6,9 +6,6 @@ export default function Home() {
       <h1>Trollololololo!!!</h1>
       <button>Log In</button>
       <button>Sign Up</button>
-      <button>
-        <Link to="/bridges">Bridge List</Link>
-      </button>
     </>
   )
 }
