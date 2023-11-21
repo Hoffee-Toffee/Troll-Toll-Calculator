@@ -118,10 +118,10 @@ Here is a start on your database you can update these in your documentation. The
 | name | string | Name of the bridge |
 | location | string | Location of the bridge |
 | type | string | Type of the bridge (e.g., Motorway bridge, Road bridge) |
-| yearBuilt | integer | Year the bridge was built |
-| lengthMeters | string | Length of the bridge in meters |
+| year_built | integer | Year the bridge was built |
+| length_meters | string | Length of the bridge in meters |
 | lanes | integer | Number of lanes on the bridge |
-| addedByUser | string | Troll toll operator who added the bridge data (auth0_id) |
+| added_by_user | string | Troll toll operator who added the bridge data (auth0_id) |
 
 ### Users/ Trolls - not set up
 
@@ -147,7 +147,7 @@ Here is a start on your database you can update these in your documentation. The
 | Column Name | Data Type | Purpose |
 | --- | --- | --- |
 | id | integer | Unique identifier for each toll analytics entry |
-| bridgeId | integer | Bridge ID associated with the toll data |
+| bridge_id | integer | Bridge ID associated with the toll data |
 | timestamp | date/time | Date and time of the toll collection |
 | revenue | decimal | Amount of revenue collected during the toll |
 
