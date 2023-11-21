@@ -183,6 +183,45 @@ Here is a start on your database you can update these in your documentation. The
 
 Database on toll analytics are up to you! 
 
+## Database functions:
+
+getAllBridgesDb()
+
+Returns:
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Auckland Harbour Bridge",
+    "location": "Auckland Harbour Bridge",
+    "type": "Motorway bridge",
+    "year_built": 1959,
+    "length_meters": 1020,
+    "lanes": 8,
+    "added_by_user": "",
+  },
+  // ...
+]
+```
+
+getTollAnalyticsDb()
+
+Returns:
+
+```json
+[
+  {
+    "tollId": 1,
+    "bridgeId": 1,
+    "timestamp": 1495083077243,
+    "revenue": 2.39,
+  },
+  // ...
+]
+```
+
+
 ## Authentication
 
 Follow the setting-up-auth.md document in this repo to *very loosely* help you set up auth. Careful, it was taken from a previous challenge so some steps might be missing. Consider this a good challenge trying to adapt it to a new project that might be set up slightly differently 
