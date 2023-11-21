@@ -115,12 +115,14 @@ Make sure that:
 
 | Method | Endpoint | Protected | Usage | Response |
 | --- | --- | --- | --- | --- |
-| Post | /api/v1/auth/login | Yes | Log In a Toll Operator | The Toll Operator's JWT Token |
-| Post | /api/v1/auth/register | Yes | Register a Toll Operator | The Toll Operator's JWT Token |
+| Post* | /api/v1/auth/login | Yes | Log In a Toll Operator | The Toll Operator's JWT Token |
+| Post*| /api/v1/auth/register | Yes | Register a Toll Operator | The Toll Operator's JWT Token |
 | Get | /api/v1/bridges | No | Get all bridges with toll collection data | Array of Bridge Objects |
 | Get | /api/v1/bridges/:id | No | Get one bridge with sats and toll collection data | Single Bridge Data |
 | Get | /api/v1/bridges/fav | Yes | Get the list of favourite bridges a user has saved | Array of ints (int = an id) |
 | Post | /api/v1/bridges/fav | Yes | Add a saved favourite bridge to the db | 201 status code |
+
+Endpoints with a * are stretch
 
 ### DB (Server Side)
 
