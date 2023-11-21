@@ -12,7 +12,7 @@ The extended timeframe for this project presents an opportunity for comprehensiv
 
 Trolls have no use for our dollars and cents. You need to know about troll currency to display information that is useful to them. Usually, a troll toll charge is around 5 rock candies per vehicle crossing a bridge. Usually, payment is automated using the cars' license plates. Some drivers pay ahead. 
 
-**About Troll Curcuncy:** 
+**About Troll Currency:** 
 
 - 1Ȼ is 1 troll rock candy, the smallest division of currency 
 - 100 Rock Candies = 1 Gold Ring (AuR) : 10Ȼ = 1AuR
