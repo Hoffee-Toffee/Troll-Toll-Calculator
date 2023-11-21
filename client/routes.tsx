@@ -1,7 +1,7 @@
 import { Route, createRoutesFromElements } from 'react-router-dom'
 
 import App from './components/App.tsx'
-import Bridges from './components/Bridges.tsx'
+import Bridges from './components/BridgeList.tsx'
 import Home from './components/Home.tsx'
 import SingleBridge from './components/SingleBridge.tsx'
 
