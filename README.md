@@ -102,9 +102,10 @@ Make sure that:
 ## Naming conventions
 
 Be descriptive in each function/component name, reference the particular layer of the stack.
+Note, more specific naming conventions to come.
 
 e.g. 
-- getAllBridgesDB()
+- getAllBridgesDb()
 - getAllBridgesApi()
 - updateBridgeMutation()
 - BridgesList.tsx
