@@ -83,6 +83,22 @@ As a registered toll operator user:
 
 *Here is some starter documentation to get things going, you will update this as a team at the start of the project and as you go on Github wiki. You will also be required to create a database diagram:* 
 
+## Git workflow
+
+Branch structure:
+
+Main -> Dev -> front-end or back-end branches
+
+Make sure that:
+
+- file and function naming conventions are maintained across the app
+- errors are well handled
+- no sensitive data should be exposed on the client side
+- it passes npm run lint without any code-related warnings or errors
+- no unnecessary comments or log messages are remaining
+- that Types are used where applicable, and any Type issues should be resolved
+- user-facing updates (front end/ css crew) should be checked for accessibility concerns (using the WAVE tool)
+
 ### Views (Client Side)
 
 | name | MVP | purpose |
