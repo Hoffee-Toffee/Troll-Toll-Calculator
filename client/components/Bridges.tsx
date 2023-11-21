@@ -1,6 +1,7 @@
 import { Bridge } from '../../models/bridge.ts'
 import { getBridges } from '../api/bridge.ts'
 import { useQuery } from '@tanstack/react-query'
+import { Link } from 'react-router-dom'
 
 export default function Bridges() {
   const {
@@ -21,7 +22,11 @@ export default function Bridges() {
       <h1>Bridge Toll Calculater</h1>
       <ul>
         {bridges.map((br) => {
-          return <li>{br.name}</li>
+          return (
+            <li>
+              <Link to={`/bridge/${br.id}`}>{br.name}</Link>
+            </li>
+          )
         })}
       </ul>
     </>
