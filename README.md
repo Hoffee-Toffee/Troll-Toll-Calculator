@@ -120,6 +120,22 @@ Here is a start on your database you can update these in your documentation. The
 | lanes | integer | Number of lanes on the bridge |
 | addedByUser | string | Toll operator who added the bridge data |
 
+### Users - not set up
+
+| Column Name | Data Type | Purpose |
+| --- | --- | --- |
+| id | integer | Unique identifier for each user |
+
+// add any auth data here //
+
+### Favourite Bridges (Many to Many / join table) - not set up
+
+| Column Name | Data Type | Purpose |
+| --- | --- | --- |
+| id | integer | Unique identifier |
+| user_id | integer | Which user saved the bridge |
+| bridge_id | integer | Which bridge was saved |
+
 ### Toll Analytics - not set up yet
 
 | Column Name | Data Type | Purpose |
