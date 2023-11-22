@@ -115,15 +115,82 @@ header nav span:not(:last-child)::after {
 }
 
 footer {
-  position: absolute;
   width: 100vw;
   background: #D9D9D9;
   text-align: center;
   bottom: 0;
-  height: 3em;
+  height: 5em;
+  margin-bottom: 0;
 }
 
 footer span {
-  line-height: 3em;
+  line-height: 1.5em;
   padding: 0em;
+}
+
+/* Styling for BridgeList */
+#bridgeTitle {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 50px;
+  text-align: center;
+}
+
+#bridgeList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#bridgeList li {
+  list-style: none;
+}
+
+#bridgeList .bridgeBox {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  border: 3px solid black;
+  background-color: burlywood;
+  color: rgb(0, 0, 0);
+  max-width: 700px;
+  max-height: 300px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#bridgeList .imgBox {
+  max-width: 300px;
+  align-items: center;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#bridgeList .linkButton {
+  display: flex;
+  background-color: #ecee98;
+  place-self: center;
+  align-self: center;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: solid 2px black;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#bridgeList .linkButton:hover {
+  background-color: grey;
+}
+
+#bridgeList .linkButton a {
+  text-decoration: none;
+  color: black;
+  font-style: oblique;
 }

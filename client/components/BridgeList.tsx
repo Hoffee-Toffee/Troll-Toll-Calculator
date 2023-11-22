@@ -19,18 +19,28 @@ export default function BridgesList() {
 
   return (
     <>
-      <h1>Bridge Toll Calculater</h1>
-
-    <div>
-      <ul>
-        {bridges.map((bridge, index) => {
-          return (
-            <li key={index}>
-              <Link to={`/bridge/${bridge.id}`}>{bridge.name}</Link>
-            </li>
-          )
-        })}
-      </ul>
+      <div>
+        <h1 id="bridgeTitle">Bridge Locations</h1>
+        <ul id="bridgeList">
+          {bridges.map((bridge, index) => {
+            return (
+              <li key={index}>
+                <div className="bridgeBox">
+                  <div>
+                    <img
+                      className="imgBox"
+                      src="../server/public/img/troll-bridge.jpg"
+                      alt="bridge"
+                    />
+                  </div>
+                  <button className="linkButton">
+                    <Link to={`/bridge/${bridge.id}`}>{bridge.name}</Link>
+                  </button>
+                </div>
+              </li>
+            )
+          })}
+        </ul>
       </div>
     </>
   )
