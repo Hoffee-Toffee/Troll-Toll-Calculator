@@ -1,4 +1,3 @@
-import { Bridge } from '../../models/bridge.ts'
 import { getBridgesApi } from '../api/bridge.ts'
 import { useQuery } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
@@ -22,9 +21,9 @@ export default function BridgesList() {
       <div>
         <h1 id="bridgeTitle">Bridge Locations</h1>
         <ul id="bridgeList">
-          {bridges.map((bridge, index) => {
+          {bridges.map((bridge) => {
             return (
-              <li key={index}>
+              <li key={bridge.id}>
                 <div className="bridgeBox">
                   <div>
                     <img

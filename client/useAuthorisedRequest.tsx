@@ -1,5 +1,5 @@
 import { useAuth0 } from '@auth0/auth0-react'
-import request, { Response } from 'superagent'
+import request from 'superagent'
 
 export async function useAuthorisedRequest(
   method: string,
