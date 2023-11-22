@@ -36,6 +36,12 @@ export default function BridgesList() {
                   <button className="linkButton">
                     <Link to={`/bridge/${bridge.id}`}>{bridge.name}</Link>
                   </button>
+                  <button className="favourites">
+                    <img
+                      src="../server/public/img/favourite.png"
+                      alt="favourite"
+                    />
+                  </button>
                 </div>
               </li>
             )
