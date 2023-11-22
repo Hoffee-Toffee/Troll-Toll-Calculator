@@ -3,7 +3,8 @@ import { getSingleBridgeApi } from '../api/bridge.ts'
 import { useQuery } from '@tanstack/react-query'
 import { useParams } from 'react-router-dom'
 
-export default function SingleBridge()  { //: Promise< Bridge[]>
+
+export default function SingleBridge() {
   const { id } = useParams()
   const {
     data: bridge,
