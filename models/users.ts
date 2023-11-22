@@ -1,7 +1,7 @@
 export interface User {
   id: number
   email: string
-  first_name: string
-  last_name: string
-  auth0_id: string
+  firstName: string
+  lastName: string
+  auth0Id: string
 }

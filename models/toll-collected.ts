@@ -1,6 +1,6 @@
 export interface TollCollected {
   id: number
-  bridge_id: number
+  bridgeId: number
   timestamp: number
   revenue: number
 }
