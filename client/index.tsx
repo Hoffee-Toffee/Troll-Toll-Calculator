@@ -12,7 +12,7 @@ const root = createRoot(document.getElementById('app') as HTMLElement)
 root.render(
   <Auth0Provider
     domain="dev-nk18xa4gfp361w7b.au.auth0.com"
-    clientId="E7a2EHpM5UqALC9uqBktDrM5stU9Pc5d"
+    clientId="mj53PtVJE70bCrMkheOExz8hYlEu5ob6"
     redirectUri={window.location.origin}
     audience="https://troll-toll/api"
   >

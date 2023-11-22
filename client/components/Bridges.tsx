@@ -1,6 +1,8 @@
 import { Bridge } from '../../models/bridge.ts'
 import { getBridges } from '../api/bridge.ts'
 import { useQuery } from '@tanstack/react-query'
+import { SignIn } from './SignIn.tsx'
+import { SignOut } from './SignOut.tsx'
 
 export default function Bridges() {
   const {
@@ -24,6 +26,8 @@ export default function Bridges() {
           return <li>{br.name}</li>
         })}
       </ul>
+      <SignIn />
+      <SignOut />
     </>
   )
 }
