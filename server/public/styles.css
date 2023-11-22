@@ -1,6 +1,129 @@
+/* STYLING FOR MAIN BODY */
+body {
+  background-image: url('./background.png');
+  background-size: cover;
+  height: 100%;
+}
+
 /* STYLING FOR THE HOME PAGE */
+body {
+  margin: 0;
+  margin-bottom: 3em;
+}
+
 .main-title {
   text-align: center;
+
+
+  font-size: 100px;
+}
+
+#buttons-container {
+  text-align: center;
+}
+
+#sign-in-button {
+  background-color: #c9cc39;
+  border: black 3px solid;
+  border-radius: 20px;
+  padding: 25px 65px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 23px;
+  cursor: pointer;
+  width: 17%;
+}
+
+#sign-up-button {
+  background-color: #c9cc39;
+  border: black 3px solid;
+  border-radius: 20px;
+  padding: 25px 65px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 23px;
+  cursor: pointer;
+  width: 17%;
+}
+
+.bridges-button {
+  background-color: #c9cc39;
+  border: black 3px solid;
+  border-radius: 20px;
+  padding: 25px 65px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 23px;
+  cursor: pointer;
+  width: 17%;
+}
+
+header {
+  background: lightgrey;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0.5em 15vw;
+  width: fit-content;
+  background: yellow;
+  border: solid grey 1px;
+}
+
+header nav {
+  display: flex;
+  width: fit-content;
+  margin-right: 0.5em;
+}
+
+header nav span {
+  margin-right: 0.5em;
+  place-self: center;
+  height: 1em;
+  line-height: 1em;
+}
+
+header nav span a {
+  background-color: #c9cc39;
+  border: black 2px solid;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: black;
+  padding: 0.5em 1em;
+}
+
+header nav span:not(:last-child)::after {
+  content: '';
+  margin-left: 0.5em;
+}
+
+footer {
+  position: absolute;
+  width: 100vw;
+  background: lightgray;
+  text-align: center;
+  bottom: 0;
+  height: 3em;
+}
+
+footer span {
+  line-height: 3em;
+  padding: 0em;
+
 }
 
 #bridgeList {
@@ -34,4 +157,5 @@
 }
 
 #bridgeList .linkBox {
+
 }
