@@ -1,4 +1,3 @@
-import { Bridge } from '../../models/bridge.ts'
 import { getBridgesApi } from '../api/bridge.ts'
 import { useQuery } from '@tanstack/react-query'
 import { Link } from 'react-router-dom'
@@ -24,12 +23,12 @@ export default function BridgesList() {
         <ul id="bridgeList">
           {bridges.map((bridge, index) => {
             return (
-              <li key={index}>
+              <li key={bridge.id}>
                 <div className="bridgeBox">
                   <div>
                     <img
                       className="imgBox"
-                      src="../server/public/img/troll-bridge.jpg"
+                      src="/img/troll-bridge.jpg"
                       alt="bridge"
                     />
                   </div>
