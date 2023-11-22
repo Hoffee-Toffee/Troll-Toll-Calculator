@@ -11,6 +11,15 @@ body {
   margin-bottom: 3em;
 }
 
+html {
+  min-height: 100%;
+
+}
+
+main {
+  min-height: 100%;
+}
+
 .main-title {
   text-align: center;
   margin-top: 105px;
@@ -30,7 +39,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 22px;
+  font-size: 19px;
   margin: 10px 23px;
   cursor: pointer;
   width: 17%;
@@ -44,7 +53,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 22px;
+  font-size: 19px;
   margin: 10px 23px;
   cursor: pointer;
   width: 17%;
@@ -58,11 +67,50 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 22px;
+  font-size: 19px;
   margin: 10px 23px;
   cursor: pointer;
   width: 17%;
 }
+
+/* STYLING FOR SINGULAR BRIDGE VIEW */
+#single-bridge-title {
+  text-align: center;
+}
+
+.single-bridge-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-bridge-left-div {
+  background-color: burlywood;
+  width: 500px;
+  height: 240px;
+  margin: -1px; 
+  text-align: center;
+  border: 3px solid black;
+}
+
+.right-bridge-right-div {
+  background-color: burlywood;
+  width: 500px;
+  height: 240px;
+  margin: -1px; 
+  text-align: center;
+  border: 3px solid black;
+}
+
+.single-bridge-left-div img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
 
 /* STYLING FOR THE HEADER AND FOOTER */
 
@@ -118,9 +166,9 @@ footer {
   width: 100vw;
   background: #D9D9D9;
   text-align: center;
-  bottom: 0;
   height: 5em;
   margin-bottom: 0;
+  position: absolute;
 }
 
 footer span {

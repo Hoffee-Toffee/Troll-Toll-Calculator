@@ -54,14 +54,21 @@ export default function SingleBridge() {
   console.log(bridge[0].length_meters)
   return (
     <>
-      <h1>{bridge[0].name}</h1>
+      <h1 id="single-bridge-title">{bridge[0].name}</h1>
 
-      <p>Type: {bridge[0].name}</p>
-      <p>Lanes: {bridge[0].lanes}</p>
-      <p>Length: {bridge[0].length_meters}</p>
-      <p>Location: {bridge[0].location}</p>
-      <p>Type: {bridge[0].type}</p>
-      <p>Year Built: {bridge[0].year_built}</p>
+    <div className="single-bridge-container">
+    <div className="single-bridge-left-div">
+        <img src="your-image.jpg" alt="Description of your image"></img>
+    </div>
+    <div className="right-bridge-right-div">
+      <p><strong>Type:</strong> {bridge[0].name}</p>
+      <p><strong>Lanes:</strong> {bridge[0].lanes}</p>
+      <p><strong>Length:</strong> {bridge[0].length_meters}</p>
+      <p><strong>Location:</strong> {bridge[0].location}</p>
+      <p><strong>Type:</strong> {bridge[0].type}</p>
+      <p><strong>Year Built:</strong> {bridge[0].year_built}</p>
+    </div>
+</div>
     </>
   )
 }
