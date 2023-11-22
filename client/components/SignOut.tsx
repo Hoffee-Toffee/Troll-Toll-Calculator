@@ -22,8 +22,10 @@ export function SignOut() {
 
   return (
     <IfAuthenticated>
-      <button onClick={OnSignOut}>Sign Out</button>
-      <button onClick={OnGetRequest}>Create Get get request</button>
+      <span>
+        <a onClick={OnSignOut}>Sign Out</a>
+      </span>
+      {/* <button onClick={OnGetRequest}>Create Get get request</button> */}
     </IfAuthenticated>
   )
 }

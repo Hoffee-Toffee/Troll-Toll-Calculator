@@ -84,6 +84,11 @@ export default function SingleBridge() {
           </p>
         </div>
       </div>
+      <div className="backButton">
+        <button>
+          <Link to="/bridges">Back</Link>
+        </button>
+      </div>
     </>
   )
 }
