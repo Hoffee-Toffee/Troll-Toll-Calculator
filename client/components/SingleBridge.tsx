@@ -1,7 +1,7 @@
 import { Bridge } from '../../models/bridge.ts'
 import { getSingleBridgeApi } from '../api/bridge.ts'
 import { useQuery } from '@tanstack/react-query'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 export default function SingleBridge() {
   const { id } = useParams()
@@ -32,7 +32,7 @@ export default function SingleBridge() {
 
       <div className="single-bridge-container">
         <div className="single-bridge-left-div">
-          <img src={bridge[0].image_url} alt={bridge.name}></img>
+          <img src={bridge.imageUrl} alt={bridge.name}></img>
         </div>
         <div className="right-bridge-right-div">
           <p>

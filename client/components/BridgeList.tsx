@@ -28,7 +28,7 @@ export default function BridgesList() {
                   <div>
                     <img
                       className="bridgeimages"
-                      src={bridge.image_url}
+                      src={bridge.imageUrl}
                       alt="bridge"
                     />
                   </div>
@@ -36,10 +36,7 @@ export default function BridgesList() {
                     <Link to={`/bridge/${bridge.id}`}>{bridge.name}</Link>
                   </button>
                   <button className="favourites">
-                    <img
-                      src="../server/public/img/favourite.png"
-                      alt="favourite"
-                    />
+                    <img src="../public/img/favourite.png" alt="favourite" />
                   </button>
                 </div>
               </li>
