@@ -22,10 +22,22 @@ router.get('/', async (req, res) => {
 // GET /api/v1/bridges/fav
 router.get('/fav', async (req, res) => {
   try {
-    console.log("I'm being called")
     const favBridges = await dbFavBridge.getFavBridgesDb()
     res.json(favBridges)
     console.log(favBridges)
+  } catch (error) {
+    console.error(error)
+    res.status(500).send('Something went wrong')
+  }
+})
+
+// POST /api/v1/bridges/fav
+router.post('/fav', async (req, res) => {
+  try {
+    console.log("I'm being called")
+    const bridge = req.body
+    const addedBridge = await dbFavBridge.addFavBridgeDb(bridge)
+    res.json(addedBridge)
   } catch (error) {
     console.error(error)
     res.status(500).send('Something went wrong')
@@ -45,18 +57,6 @@ router.get('/:id', async (req, res) => {
 })
 
 // -- STRETCH -- //
-
-// POST /api/v1/bridges/fav
-router.post('/fav', async (req, res) => {
-  try {
-    const bridge = req.body
-    const addedBridge = await dbFavBridge.addFavBridgeDb(bridge)
-    res.json(addedBridge)
-  } catch (error) {
-    console.error(error)
-    res.status(500).send('Something went wrong')
-  }
-})
 
 export default router
 
