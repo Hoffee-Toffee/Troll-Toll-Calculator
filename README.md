@@ -83,6 +83,14 @@ As a registered toll operator user:
 
 *Here is some starter documentation to get things going, you will update this as a team at the start of the project and as you go on Github wiki. You will also be required to create a database diagram:* 
 
+## Workflow
+
+- Use the KANBAN to assign yourself a task, post comments in the tickets to describe what needs to be done/what you are working on.
+- Move the tickets along the KANBAN as you progress.
+- When you're ready to commit new changes, first commit to your branch create a pull request to dev. Tell Sofia when that's done and it will be finalised with Gaby.
+- When your changes are committed to the dev branch by Gaby, Sofia will make sure to communicate to everyone to pull the latest changes from dev.
+
+
 ## Git workflow
 
 Branch structure:
@@ -102,24 +110,33 @@ Make sure that:
 ## Naming conventions
 
 Be descriptive in each function/component name, reference the particular layer of the stack.
+Note, more specific naming conventions to come.
 
-e.g. 
-- getAllBridgesDB()
+Function names: 
+- getAllBridgesDb()
+- getFavBridgesDb()
+- addFavBridgeDb()
 - getAllBridgesApi()
-- updateBridgeMutation()
+- getBridgeApi()
+- useBridgeMutation()
+
+Component names
 - BridgesList.tsx
 - FavouriteBridges.tsx
+- SingleBridge.tsx
+- Home.tsx
+- App.tsx
 
 
 ### Views (Client Side)
 
 | name | MVP | purpose |
 | --- | --- | --- |
-| Login | No | View for the toll operator to enter their login credentials |
-| Register | No | View for the toll operator to sign up |
 | Home | Yes | Welcomes troll toll operators and links to the app (to all bridges) and sign in for stretch|
 | Bridges | Yes | Display a list of bridges with toll collection data |
 | Bridge | Yes | Display a single bridge using it's id with it's data |
+| Login | No | View for the toll operator to enter their login credentials |
+| Register | No | View for the toll operator to sign up |
 | My Bridges | No | Display a list of favourite bridges saved by the user and active bridge|
 | Analytics | No | Provide tools to analyze toll collection trends |
 
@@ -127,10 +144,10 @@ e.g.
 
 | Method | Endpoint | Protected | Usage | Response |
 | --- | --- | --- | --- | --- |
-| Post* | /api/v1/auth/login | Yes | Log In a Toll Operator | The Toll Operator's JWT Token |
-| Post*| /api/v1/auth/register | Yes | Register a Toll Operator | The Toll Operator's JWT Token |
 | Get | /api/v1/bridges | No | Get all bridges with toll collection data | Array of Bridge Objects |
 | Get | /api/v1/bridges/:id | No | Get one bridge with sats and toll collection data | Single Bridge Data |
+| Post* | /api/v1/auth/login | Yes | Log In a Toll Operator | The Toll Operator's JWT Token |
+| Post*| /api/v1/auth/register | Yes | Register a Toll Operator | The Toll Operator's JWT Token |
 | Get* | /api/v1/bridges/fav | Yes | Get the list of favourite bridges a user has saved | Array of ints (int = an id) |
 | Post* | /api/v1/bridges/fav | Yes | Add a saved favourite bridge to the db | 201 status code |
 
@@ -151,7 +168,7 @@ Here is a start on your database you can update these in your documentation. The
 | year_built | integer | Year the bridge was built |
 | length_meters | string | Length of the bridge in meters |
 | lanes | integer | Number of lanes on the bridge |
-| added_by_user | string | Troll toll operator who added the bridge data (auth0_id) |
+| added_by_user | integer | Troll toll operator userID who added the bridge data (auth0_id) |
 
 ### Users/ Trolls - not set up
 
@@ -182,6 +199,45 @@ Here is a start on your database you can update these in your documentation. The
 | revenue | decimal | Amount of revenue collected during the toll |
 
 Database on toll analytics are up to you! 
+
+## Database functions:
+
+getAllBridgesDb()
+
+Returns:
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Auckland Harbour Bridge",
+    "location": "Auckland Harbour Bridge",
+    "type": "Motorway bridge",
+    "year_built": 1959,
+    "length_meters": 1020,
+    "lanes": 8,
+    "added_by_user": "",
+  },
+  // ...
+]
+```
+
+getTollAnalyticsDb()
+
+Returns:
+
+```json
+[
+  {
+    "id": 1,
+    "bridgeId": 1,
+    "timestamp": 1495083077243,
+    "revenue": 2.39,
+  },
+  // ...
+]
+```
+
 
 ## Authentication
 
