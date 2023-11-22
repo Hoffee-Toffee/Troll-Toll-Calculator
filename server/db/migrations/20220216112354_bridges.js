@@ -8,6 +8,7 @@ export async function up(knex) {
     table.integer('length_meters')
     table.integer('lanes').nullable()
     table.integer('added_by_user').references('users.id')
+    table.decimal('toll_charge')
   })
 }
 
