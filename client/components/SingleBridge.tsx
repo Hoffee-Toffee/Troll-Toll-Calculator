@@ -1,41 +1,9 @@
-// import { Link } from 'react-router-dom'
-// import BridgesList from './BridgeList'
-// import { getSingleBridgeApi } from '../api/bridge.ts'
-// import { useQuery } from '@tanstack/react-query'
-
-// export default function SingleBridge() {
-//   const {
-//     data: bridge,
-//     error,
-//     isLoading,
-//   } = useQuery({ queryKey: ['bridges'], queryFn: getSingleBridgeApi })
-
-//   if (error) {
-//     return <p>Your bridges are gone! What a massive error</p>
-//   }
-//   if (!bridge || isLoading) {
-//     return <p>Fetching bridges from auckland...</p>
-//   }
-//   return (
-//     <>
-//       <button>
-//         <Link to={'/'}>Home</Link>
-//       </button>
-//       <button>
-//         <Link to="/bridges">Bridge List</Link>
-//       </button>
-//       <h1>This is Single Troll bridedeafdadkj!</h1>
-//       <h2>{bridge.name}</h2>
-//     </>
-//   )
-// }
 import { Bridge } from '../../models/bridge.ts'
 import { getBridgesApi } from '../api/bridge.ts'
 import { useQuery } from '@tanstack/react-query'
 import { Link, useParams } from 'react-router-dom'
 
 export default function SingleBridge() {
-  //Props :Bridge
   const { id } = useParams()
   const {
     data: bridges,
