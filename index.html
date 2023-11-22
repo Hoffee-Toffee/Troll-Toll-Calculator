@@ -4,11 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" href="#">
+    <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="./server/public/styles.css" />
     <title>Troll Toll Calculator</title>
   </head>
+
   <body style="font-family: monospace; font-size: larger">
+    <audio id="backgroundMusic" loop>
+      <source
+        src="./server/public/HappyTrollRingtoneMp31697169289.mp3"
+        type="audio/mp3"
+      />
+    </audio>
+    <script>
+      const backgroundMusic = document.getElementById('backgroundMusic')
+      window.addEventListener('load', () => {
+        backgroundMusic.play()
+      })
+    </script>
     <div id="app"></div>
 
     <script src="./client/index.tsx" type="module"></script>
