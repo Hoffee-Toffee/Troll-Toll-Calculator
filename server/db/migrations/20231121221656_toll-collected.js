@@ -1,5 +1,5 @@
 export async function up(knex) {
-  await knex.schema.createTable('toll_collected', (table) => {
+  await knex.schema.createTable('toll-collected', (table) => {
     table.increments('id').primary()
     table.integer('bridge_id')
     table.datetime('timestamp')
@@ -8,5 +8,5 @@ export async function up(knex) {
 }
 
 export async function down(knex) {
-  await knex.schema.dropTable('toll_collected')
+  await knex.schema.dropTable('toll-collected')
 }

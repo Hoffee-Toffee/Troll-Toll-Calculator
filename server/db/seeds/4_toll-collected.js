@@ -1,5 +1,5 @@
 export async function seed(knex) {
-  await knex('toll_collected').insert([
+  await knex('toll-collected').insert([
     {
       bridge_id: 1,
       timestamp: Date.now(),

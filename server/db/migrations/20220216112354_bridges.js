@@ -8,6 +8,7 @@ export async function up(knex) {
     table.integer('length_meters')
     table.integer('lanes').nullable()
     table.integer('added_by_user')
+    // table.foreign('bridges_id').references('id').inTable('favourite_bridges')
   })
 }
 

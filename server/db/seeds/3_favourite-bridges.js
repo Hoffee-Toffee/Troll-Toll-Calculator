@@ -1,5 +1,5 @@
 export async function seed(knex) {
-  await knex('favourite_bridges').insert([
+  await knex('favourite-bridges').insert([
     {
       user_id: 1,
       bridge_id: 1,
