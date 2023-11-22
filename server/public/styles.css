@@ -1,11 +1,9 @@
 /* STYLING FOR MAIN BODY */
 body {
-  background-image: url("./background.png");
+  background-image: url('./background.png');
   background-size: cover;
   height: 100%;
 }
-
-
 
 /* STYLING FOR THE HOME PAGE */
 body {
@@ -24,7 +22,7 @@ body {
 }
 
 #sign-in-button {
-  background-color: #C9CC39;
+  background-color: #c9cc39;
   border: black 3px solid;
   border-radius: 20px;
   padding: 25px 65px;
@@ -38,7 +36,7 @@ body {
 }
 
 #sign-up-button {
-  background-color: #C9CC39;
+  background-color: #c9cc39;
   border: black 3px solid;
   border-radius: 20px;
   padding: 25px 65px;
@@ -52,7 +50,7 @@ body {
 }
 
 .bridges-button {
-  background-color: #C9CC39;
+  background-color: #c9cc39;
   border: black 3px solid;
   border-radius: 20px;
   padding: 25px 65px;
@@ -63,8 +61,6 @@ body {
   margin: 10px 23px;
   cursor: pointer;
   width: 17%;
-}
-
 }
 
 header {
@@ -127,4 +123,3 @@ footer span {
   line-height: 3em;
   padding: 0em;
 }
-
