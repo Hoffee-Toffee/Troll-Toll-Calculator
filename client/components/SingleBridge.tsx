@@ -51,7 +51,7 @@ export default function SingleBridge() {
   }
 
   const bridge = bridges.filter((br) => br.id === Number(id))
-  console.log(bridge[0].length_meters)
+
   return (
     <>
       <h1>{bridge[0].name}</h1>
@@ -62,6 +62,7 @@ export default function SingleBridge() {
       <p>Location: {bridge[0].location}</p>
       <p>Type: {bridge[0].type}</p>
       <p>Year Built: {bridge[0].year_built}</p>
+      <p>Estimated Toll Earnings: {bridge[0].toll_charge}</p>
     </>
   )
 }
