@@ -9,7 +9,7 @@ export default function Home() {
         <button id="sign-in-button">Log In</button>
         <button id="sign-up-button">Sign Up</button>
         <button className="bridges-button">
-            <Link to="/bridges">Bridge List</Link>
+            <Link style={{textDecoration: 'none'}} to="/bridges">Bridge List</Link>
         </button>
       </div>
     </>

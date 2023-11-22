@@ -13,8 +13,9 @@ body {
 
 .main-title {
   text-align: center;
-
+  margin-top: 105px;
   font-size: 100px;
+  color: #000000;
 }
 
 #buttons-container {
@@ -29,7 +30,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 22px;
   margin: 10px 23px;
   cursor: pointer;
   width: 17%;
@@ -43,7 +44,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 22px;
   margin: 10px 23px;
   cursor: pointer;
   width: 17%;
@@ -57,28 +58,31 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 22px;
   margin: 10px 23px;
   cursor: pointer;
   width: 17%;
 }
 
+/* STYLING FOR THE HEADER AND FOOTER */
+
 header {
-  background: lightgrey;
+  opacity: 70%;
   margin: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   height: 100%;
+  margin-top: 20px;
 }
 
-header h1 {
+/* header h1 {
   margin: 0;
   padding: 0.5em 15vw;
   width: fit-content;
   background: yellow;
   border: solid grey 1px;
-}
+} */
 
 header nav {
   display: flex;
@@ -113,7 +117,7 @@ header nav span:not(:last-child)::after {
 footer {
   position: absolute;
   width: 100vw;
-  background: lightgray;
+  background: #D9D9D9;
   text-align: center;
   bottom: 0;
   height: 3em;
