@@ -9,7 +9,7 @@ export async function getFavBridgesDb(
 }
 
 export async function addFavBridgeDb(
-  favBridge,
+  favBridge: number,
   db = connection
 ): Promise<FavouriteBridge[]> {
   try {
