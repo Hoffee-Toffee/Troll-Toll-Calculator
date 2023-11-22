@@ -19,9 +19,8 @@ export default function BridgesList() {
 
   return (
     <>
-      <h1>Bridge Toll Calculator</h1>
-
       <div>
+        <h1 id="bridgeTitle">Bridge Locations</h1>
         <ul id="bridgeList">
           {bridges.map((bridge, index) => {
             return (
@@ -34,9 +33,9 @@ export default function BridgesList() {
                       alt="bridge"
                     />
                   </div>
-                  <div className="linkBox">
+                  <button className="linkButton">
                     <Link to={`/bridge/${bridge.id}`}>{bridge.name}</Link>
-                  </div>
+                  </button>
                 </div>
               </li>
             )
