@@ -23,7 +23,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   const bridgeId = Number(req.params.id)
   try {
-    const bridge = await dbBridge.getAllBridgesDb(bridgeId)
+    const bridge = await dbBridge.getBridgeByIdDb(bridgeId)
     res.json(bridge)
   } catch (error) {
     console.error(error)
