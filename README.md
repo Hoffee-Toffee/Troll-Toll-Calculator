@@ -168,7 +168,7 @@ Here is a start on your database you can update these in your documentation. The
 | year_built | integer | Year the bridge was built |
 | length_meters | string | Length of the bridge in meters |
 | lanes | integer | Number of lanes on the bridge |
-| added_by_user | string | Troll toll operator who added the bridge data (auth0_id) |
+| added_by_user | integer | Troll toll operator userID who added the bridge data (auth0_id) |
 
 ### Users/ Trolls - not set up
 
