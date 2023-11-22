@@ -1,6 +1,4 @@
 import express from 'express'
-import { Bridge } from '../../models/bridge.ts'
-import { JwtRequest } from '../auth0.ts'
 import * as dbBridge from '../db/bridges.ts'
 import * as dbFavBridge from '../db/favourite-bridges.ts'
 
