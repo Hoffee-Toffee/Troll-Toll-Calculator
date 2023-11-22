@@ -1,3 +1,12 @@
+/* STYLING FOR MAIN BODY */
+body {
+  background-image: url("./background.png");
+  background-size: cover;
+  height: 100%;
+}
+
+
+
 /* STYLING FOR THE HOME PAGE */
 body {
   margin: 0;
@@ -6,6 +15,56 @@ body {
 
 .main-title {
   text-align: center;
+
+  font-size: 100px;
+}
+
+#buttons-container {
+  text-align: center;
+}
+
+#sign-in-button {
+  background-color: #C9CC39;
+  border: black 3px solid;
+  border-radius: 20px;
+  padding: 25px 65px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 23px;
+  cursor: pointer;
+  width: 17%;
+}
+
+#sign-up-button {
+  background-color: #C9CC39;
+  border: black 3px solid;
+  border-radius: 20px;
+  padding: 25px 65px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 23px;
+  cursor: pointer;
+  width: 17%;
+}
+
+.bridges-button {
+  background-color: #C9CC39;
+  border: black 3px solid;
+  border-radius: 20px;
+  padding: 25px 65px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 23px;
+  cursor: pointer;
+  width: 17%;
+}
+
 }
 
 header {
@@ -68,3 +127,4 @@ footer span {
   line-height: 3em;
   padding: 0em;
 }
+
