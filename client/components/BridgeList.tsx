@@ -28,8 +28,8 @@ export default function BridgesList() {
                 <div className="bridgeBox">
                   <div>
                     <img
-                      className="imgBox"
-                      src="../server/public/img/troll-bridge.jpg"
+                      className="bridgeimages"
+                      src={bridge.image_url}
                       alt="bridge"
                     />
                   </div>

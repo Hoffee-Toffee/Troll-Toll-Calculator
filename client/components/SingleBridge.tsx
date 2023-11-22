@@ -57,7 +57,9 @@ export default function SingleBridge() {
       <h1 id="single-bridge-title">{bridge[0].name}</h1>
 
       <div className="single-bridge-container">
-        <div className="single-bridge-left-div"></div>
+        <div className="single-bridge-left-div">
+          <img src={bridge[0].image_url} alt="bridge" />
+        </div>
         <div className="right-bridge-right-div">
           <p>
             <strong>Type:</strong> {bridge[0].name}

@@ -8,4 +8,5 @@ export interface Bridge {
   lanes?: number | null
   addedByUser: string
   tollCharge: number
+  imageUrl: string
 }
