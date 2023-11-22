@@ -21,7 +21,7 @@ export default function BridgesList() {
       <div>
         <h1 id="bridgeTitle">Bridge Locations</h1>
         <ul id="bridgeList">
-          {bridges.map((bridge, index) => {
+          {bridges.map((bridge) => {
             return (
               <li key={bridge.id}>
                 <div className="bridgeBox">
