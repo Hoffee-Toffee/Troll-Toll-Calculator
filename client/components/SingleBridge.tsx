@@ -24,7 +24,6 @@ export default function SingleBridge() {
   if (!bridge || isLoading) {
     return <p>Fetching bridges from auckland...</p>
   }
-  console.log(bridge)
 
   return (
     <>
