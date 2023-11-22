@@ -51,24 +51,39 @@ export default function SingleBridge() {
   }
 
   const bridge = bridges.filter((br) => br.id === Number(id))
-  console.log(bridge[0].length_meters)
+
   return (
     <>
       <h1 id="single-bridge-title">{bridge[0].name}</h1>
 
-    <div className="single-bridge-container">
-    <div className="single-bridge-left-div">
-        <img src="your-image.jpg" alt="Description of your image"></img>
-    </div>
-    <div className="right-bridge-right-div">
-      <p><strong>Type:</strong> {bridge[0].name}</p>
-      <p><strong>Lanes:</strong> {bridge[0].lanes}</p>
-      <p><strong>Length:</strong> {bridge[0].length_meters}</p>
-      <p><strong>Location:</strong> {bridge[0].location}</p>
-      <p><strong>Type:</strong> {bridge[0].type}</p>
-      <p><strong>Year Built:</strong> {bridge[0].year_built}</p>
-    </div>
-</div>
+      <div className="single-bridge-container">
+        <div className="single-bridge-left-div">
+          <img src="your-image.jpg" alt="Description of your image"></img>
+        </div>
+        <div className="right-bridge-right-div">
+          <p>
+            <strong>Type:</strong> {bridge[0].name}
+          </p>
+          <p>
+            <strong>Lanes:</strong> {bridge[0].lanes}
+          </p>
+          <p>
+            <strong>Length:</strong> {bridge[0].length_meters}
+          </p>
+          <p>
+            <strong>Location:</strong> {bridge[0].location}
+          </p>
+          <p>
+            <strong>Type:</strong> {bridge[0].type}
+          </p>
+          <p>
+            <strong>Year Built:</strong> {bridge[0].year_built}
+          </p>
+          <p>
+            <strong>Estimated Toll Earnings:</strong> {bridge[0].toll_charge}
+          </p>
+        </div>
+      </div>
     </>
   )
 }

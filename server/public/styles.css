@@ -1,7 +1,9 @@
 /* STYLING FOR MAIN BODY */
-body {
+html {
   background-image: url('./background.png');
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   height: 100%;
 }
 
@@ -13,7 +15,6 @@ body {
 
 html {
   min-height: 100%;
-
 }
 
 main {
@@ -43,6 +44,11 @@ main {
   margin: 10px 23px;
   cursor: pointer;
   width: 17%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#sign-in-button:hover {
+  background-color: gray;
 }
 
 #sign-up-button {
@@ -57,6 +63,11 @@ main {
   margin: 10px 23px;
   cursor: pointer;
   width: 17%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#sign-up-button:hover {
+  background-color: gray;
 }
 
 .bridges-button {
@@ -70,7 +81,8 @@ main {
   font-size: 19px;
   margin: 10px 23px;
   cursor: pointer;
-  width: 17%;
+  width: 20%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* STYLING FOR SINGULAR BRIDGE VIEW */
@@ -88,7 +100,7 @@ main {
   background-color: burlywood;
   width: 500px;
   height: 240px;
-  margin: -1px; 
+  margin: -1px;
   text-align: center;
   border: 3px solid black;
 }
@@ -97,7 +109,7 @@ main {
   background-color: burlywood;
   width: 500px;
   height: 240px;
-  margin: -1px; 
+  margin: -1px;
   text-align: center;
   border: 3px solid black;
 }
@@ -109,9 +121,15 @@ main {
   margin: 0 auto;
 }
 
+.bridges-button a {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #000000;
+}
 
-
-
+.bridges-button:hover {
+  background-color: gray;
+}
 /* STYLING FOR THE HEADER AND FOOTER */
 
 header {
@@ -136,6 +154,8 @@ header nav {
   display: flex;
   width: fit-content;
   margin-right: 0.5em;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 header nav span {
@@ -143,6 +163,7 @@ header nav span {
   place-self: center;
   height: 1em;
   line-height: 1em;
+  cursor: pointer;
 }
 
 header nav span a {
@@ -157,17 +178,23 @@ header nav span a {
   padding: 0.5em 1em;
 }
 
+header nav span a:hover {
+  background-color: gray;
+}
+
 header nav span:not(:last-child)::after {
   content: '';
   margin-left: 0.5em;
 }
 
 footer {
-  width: 100vw;
-  background: #D9D9D9;
+  background: #d9d9d9;
   text-align: center;
   height: 5em;
-  margin-bottom: 0;
+  margin-top: 20%;
+  margin-bottom: -5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   position: absolute;
 }
 
