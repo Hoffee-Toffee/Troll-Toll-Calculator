@@ -26,8 +26,6 @@ export default function Bridges() {
           return <li>{br.name}</li>
         })}
       </ul>
-      <SignIn />
-      <SignOut />
     </>
   )
 }
