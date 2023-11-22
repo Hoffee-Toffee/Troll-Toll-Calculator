@@ -83,6 +83,14 @@ As a registered toll operator user:
 
 *Here is some starter documentation to get things going, you will update this as a team at the start of the project and as you go on Github wiki. You will also be required to create a database diagram:* 
 
+## Workflow
+
+- Use the KANBAN to assign yourself a task, post comments in the tickets to describe what needs to be done/what you are working on.
+- Move the tickets along the KANBAN as you progress.
+- When you're ready to commit new changes, first commit to your branch create a pull request to dev. Tell Sofia when that's done and it will be finalised with Gaby.
+- When your changes are committed to the dev branch by Gaby, Sofia will make sure to communicate to everyone to pull the latest changes from dev.
+
+
 ## Git workflow
 
 Branch structure:
@@ -104,12 +112,20 @@ Make sure that:
 Be descriptive in each function/component name, reference the particular layer of the stack.
 Note, more specific naming conventions to come.
 
-e.g. 
+Function names: 
 - getAllBridgesDb()
+- getFavBridgesDb()
+- addFavBridgeDb()
 - getAllBridgesApi()
+- getBridgeApi()
 - useBridgeMutation()
+
+Component names
 - BridgesList.tsx
 - FavouriteBridges.tsx
+- SingleBridge.tsx
+- Home.tsx
+- App.tsx
 
 
 ### Views (Client Side)
@@ -152,7 +168,7 @@ Here is a start on your database you can update these in your documentation. The
 | year_built | integer | Year the bridge was built |
 | length_meters | string | Length of the bridge in meters |
 | lanes | integer | Number of lanes on the bridge |
-| added_by_user | string | Troll toll operator who added the bridge data (auth0_id) |
+| added_by_user | integer | Troll toll operator userID who added the bridge data (auth0_id) |
 
 ### Users/ Trolls - not set up
 
@@ -225,8 +241,61 @@ Returns:
 
 ## Authentication
 
-Follow the setting-up-auth.md document in this repo to *very loosely* help you set up auth. Careful, it was taken from a previous challenge so some steps might be missing. Consider this a good challenge trying to adapt it to a new project that might be set up slightly differently 
+To make a request to the server that checks the authentication of the user, use the custom hook ```useAuthorisedRequest(method, endpoint, body)``` which returns ```<Promise<() => Promise<request.response>>>```
 
+| Parameter | Data Type | Purpose |
+| --- | --- | --- |
+| method | string | the type of the request. ```get``` ```post``` ```patch``` or ```delete``` |
+| endpoint | string | the endpoint of the request |
+| body | string or undefined | the body of the request |
+
+An explample on how to create an authorized request:
+
+```
+//React Component function
+export function CreateGetRequest() {
+
+  // Use the hook at the top level of your component
+  const makeRequest = useAuthorisedRequest('get', '/api/v1/auth', undefined)
+
+  async function OnGetRequest() {
+
+    // Make the request  
+    const response = await (await makeRequest)()
+    // Output the response to console
+    console.log(response)
+  }
+
+  return (
+    // Only send an authorised request if the user is authenticated
+    <IfAuthenticated>
+      <button onClick={OnGetRequest}>Create Get get request</button>
+    </IfAuthenticated>
+  )
+}
+```
+There are two example react components ```SignIn``` and ```SignOut``` that show how to sign the user in, out, and how to make an authenticated request. They should be placed as siblings in there parents component.
+
+```
+<SignIn/>
+<SignOut/>
+```
+
+### Helper Components
+
+There are two helper components that will render there children conditionally
+
+```
+// Will only render the <p> tag if the user is currently enticated
+<Ifenticated>
+      <p>Currently Signed in</p>
+</Ifenticated>
+```
+```
+// Will only render the <p> tag if the user is currently signed-out
+<IfNotenticated>
+      <p>Currently Signed out! Click here to sign in</p>
+</IfNotenticated>```
 ---
 
 ## Setup

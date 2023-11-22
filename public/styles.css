@@ -1,0 +1,270 @@
+/* STYLING FOR MAIN BODY */
+html {
+  background-image: url('./background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+/* STYLING FOR THE HOME PAGE */
+body {
+  margin: 0;
+  margin-bottom: 3em;
+}
+
+html {
+  min-height: 100%;
+}
+
+main {
+  min-height: 100%;
+}
+
+.main-title {
+  text-align: center;
+  margin-top: 105px;
+  font-size: 100px;
+  color: #000000;
+}
+
+#buttons-container {
+  text-align: center;
+}
+
+#sign-in-button {
+  background-color: #c9cc39;
+  border: black 3px solid;
+  border-radius: 20px;
+  padding: 25px 65px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 10px 23px;
+  cursor: pointer;
+  width: 17%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#sign-in-button:hover {
+  background-color: gray;
+}
+
+#sign-up-button {
+  background-color: #c9cc39;
+  border: black 3px solid;
+  border-radius: 20px;
+  padding: 25px 65px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 10px 23px;
+  cursor: pointer;
+  width: 17%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#sign-up-button:hover {
+  background-color: gray;
+}
+
+.bridges-button {
+  background-color: #c9cc39;
+  border: black 3px solid;
+  border-radius: 20px;
+  padding: 25px 65px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 10px 23px;
+  cursor: pointer;
+  width: 20%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* STYLING FOR SINGULAR BRIDGE VIEW */
+#single-bridge-title {
+  text-align: center;
+}
+
+.single-bridge-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-bridge-left-div {
+  background-color: burlywood;
+  width: 500px;
+  height: 240px;
+  margin: -1px;
+  text-align: center;
+  border: 3px solid black;
+}
+
+.right-bridge-right-div {
+  background-color: burlywood;
+  width: 500px;
+  height: 240px;
+  margin: -1px;
+  text-align: center;
+  border: 3px solid black;
+}
+
+.single-bridge-left-div img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.bridges-button a {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #000000;
+}
+
+.bridges-button:hover {
+  background-color: gray;
+}
+/* STYLING FOR THE HEADER AND FOOTER */
+
+header {
+  opacity: 70%;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: 20px;
+}
+
+/* header h1 {
+  margin: 0;
+  padding: 0.5em 15vw;
+  width: fit-content;
+  background: yellow;
+  border: solid grey 1px;
+} */
+
+header nav {
+  display: flex;
+  width: fit-content;
+  margin-right: 0.5em;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+header nav span {
+  margin-right: 0.5em;
+  place-self: center;
+  height: 1em;
+  line-height: 1em;
+  cursor: pointer;
+}
+
+header nav span a {
+  background-color: #c9cc39;
+  border: black 2px solid;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: black;
+  padding: 0.5em 1em;
+}
+
+header nav span a:hover {
+  background-color: gray;
+}
+
+header nav span:not(:last-child)::after {
+  content: '';
+  margin-left: 0.5em;
+}
+
+footer {
+  background: #d9d9d9;
+  text-align: center;
+  height: 5em;
+  margin-top: 20%;
+  margin-bottom: -5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+footer span {
+  line-height: 1.5em;
+  padding: 0em;
+}
+
+/* Styling for BridgeList */
+#bridgeTitle {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 50px;
+  text-align: center;
+}
+
+#bridgeList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#bridgeList li {
+  list-style: none;
+}
+
+#bridgeList .bridgeBox {
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  border: 3px solid black;
+  background-color: burlywood;
+  color: rgb(0, 0, 0);
+  max-width: 700px;
+  max-height: 300px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#bridgeList .imgBox {
+  max-width: 300px;
+  align-items: center;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#bridgeList .linkButton {
+  display: flex;
+  background-color: #ecee98;
+  place-self: center;
+  align-self: center;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: solid 2px black;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#bridgeList .linkButton:hover {
+  background-color: grey;
+}
+
+#bridgeList .linkButton a {
+  text-decoration: none;
+  color: black;
+  font-style: oblique;
+}
