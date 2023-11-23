@@ -55,6 +55,9 @@ export default function SingleBridge() {
           <p>
             <strong>Estimated Toll Earnings:</strong> {bridge.tollCharge}
           </p>
+          <p>
+            <strong>Estimated Traffic:</strong> {bridge.busyness}
+          </p>
         </div>
       </div>
       <div className="backButton">
