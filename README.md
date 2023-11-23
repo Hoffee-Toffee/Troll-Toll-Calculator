@@ -169,6 +169,7 @@ Here is a start on your database you can update these in your documentation. The
 | length_meters | string | Length of the bridge in meters |
 | lanes | integer | Number of lanes on the bridge |
 | added_by_user | integer | Troll toll operator userID who added the bridge data (auth0_id) |
+| busyness | integer | density of bridge traffic determining estimated toll collected |
 
 ### Users/ Trolls - not set up
 
