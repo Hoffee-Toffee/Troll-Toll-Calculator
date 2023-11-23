@@ -32,44 +32,6 @@ main {
   text-align: center;
 }
 
-#sign-in-button {
-  background-color: #c9cc39;
-  border: black 3px solid;
-  border-radius: 20px;
-  padding: 25px 65px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 19px;
-  margin: 10px 23px;
-  cursor: pointer;
-  width: 17%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-#sign-in-button:hover {
-  background-color: gray;
-}
-
-#sign-up-button {
-  background-color: #c9cc39;
-  border: black 3px solid;
-  border-radius: 20px;
-  padding: 25px 65px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 19px;
-  margin: 10px 23px;
-  cursor: pointer;
-  width: 17%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-#sign-up-button:hover {
-  background-color: gray;
-}
-
 .bridges-button {
   background-color: #c9cc39;
   border: black 3px solid;
@@ -85,9 +47,22 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.bridges-button a {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #000000;
+}
+
+.bridges-button:hover {
+  background-color: gray;
+}
+
 /* STYLING FOR SINGULAR BRIDGE VIEW */
 #single-bridge-title {
   text-align: center;
+  font-size: 40px;
+  margin-top: 2%;
+  margin-bottom: 5%;
 }
 
 .single-bridge-container {
@@ -97,12 +72,18 @@ main {
 }
 
 .single-bridge-left-div {
-  background-color: burlywood;
+  /* background-image: url('./img/bridge.jpg'); */
+  background-size: cover;
   width: 500px;
   height: 240px;
   margin: -1px;
   text-align: center;
   border: 3px solid black;
+  display: flex;
+}
+
+.single-bridge-left-div img {
+  width: 500px;
 }
 
 .right-bridge-right-div {
@@ -121,15 +102,31 @@ main {
   margin: 0 auto;
 }
 
-.bridges-button a {
-  font-size: 30px;
-  font-weight: bolder;
-  color: #000000;
+.backButton {
+  text-align: center;
 }
 
-.bridges-button:hover {
+.backButton button {
+  background-color: #c9cc39;
+  text-decoration: none;
+  border-radius: 5px;
+  border: #000000 solid 3px;
+  width: 100px;
+  height: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: 5%;
+}
+
+.backButton button:hover {
   background-color: gray;
 }
+
+.backButton button a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
 /* STYLING FOR THE HEADER AND FOOTER */
 
 header {
@@ -182,11 +179,6 @@ header nav span a:hover {
   background-color: gray;
 }
 
-header nav span:not(:last-child)::after {
-  content: '';
-  margin-left: 0.5em;
-}
-
 footer {
   background: #d9d9d9;
   text-align: center;
@@ -237,8 +229,9 @@ footer span {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-#bridgeList .imgBox {
-  max-width: 300px;
+#bridgeList .bridgeimages {
+  width: 400px;
+  height: 250px;
   align-items: center;
   margin: 10px;
   border-radius: 5px;
@@ -267,4 +260,19 @@ footer span {
   text-decoration: none;
   color: black;
   font-style: oblique;
+}
+
+.favourites {
+  width: 30px;
+  height: 30px;
+  margin-top: 30px;
+  margin-right: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.favourites img {
+  width: 40px;
 }

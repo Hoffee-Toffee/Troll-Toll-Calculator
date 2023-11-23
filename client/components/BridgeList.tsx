@@ -27,13 +27,16 @@ export default function BridgesList() {
                 <div className="bridgeBox">
                   <div>
                     <img
-                      className="imgBox"
-                      src="/img/troll-bridge.jpg"
+                      className="bridgeimages"
+                      src={bridge.imageUrl}
                       alt="bridge"
                     />
                   </div>
                   <button className="linkButton">
                     <Link to={`/bridge/${bridge.id}`}>{bridge.name}</Link>
+                  </button>
+                  <button className="favourites">
+                    <img src="../public/img/favourite.png" alt="favourite" />
                   </button>
                 </div>
               </li>

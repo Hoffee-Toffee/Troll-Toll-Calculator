@@ -14,7 +14,9 @@ export function SignIn() {
 
   return (
     <IfNotAuthenticated>
-      <button onClick={OnSignIn}>Sign In</button>
+      <span>
+        <a onClick={OnSignIn}>Sign In</a>
+      </span>
     </IfNotAuthenticated>
   )
 }

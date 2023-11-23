@@ -1,8 +1,7 @@
 import { Bridge } from '../../models/bridge.ts'
 import { getSingleBridgeApi } from '../api/bridge.ts'
 import { useQuery } from '@tanstack/react-query'
-import { useParams } from 'react-router-dom'
-
+import { Link, useParams } from 'react-router-dom'
 
 export default function SingleBridge() {
   const { id } = useParams()
@@ -10,7 +9,14 @@ export default function SingleBridge() {
     data: bridge,
     isError,
     isLoading,
-  } : {data : Bridge | undefined, isError : boolean, isLoading : boolean}  = useQuery({ queryKey: ['bridges', id], queryFn: ()=> getSingleBridgeApi(Number(id)) })
+  }: {
+    data: Bridge | undefined
+    isError: boolean
+    isLoading: boolean
+  } = useQuery({
+    queryKey: ['bridges', id],
+    queryFn: () => getSingleBridgeApi(Number(id)),
+  })
 
   if (isError) {
     return <p>Your bridges are gone! What a massive error</p>
@@ -18,7 +24,6 @@ export default function SingleBridge() {
   if (!bridge || isLoading) {
     return <p>Fetching bridges from auckland...</p>
   }
-  console.log(bridge)
 
   return (
     <>
@@ -26,7 +31,7 @@ export default function SingleBridge() {
 
       <div className="single-bridge-container">
         <div className="single-bridge-left-div">
-          <img src="your-image.jpg" alt={bridge.name}></img>
+          <img src={bridge.imageUrl} alt={bridge.name}></img>
         </div>
         <div className="right-bridge-right-div">
           <p>
@@ -51,6 +56,11 @@ export default function SingleBridge() {
             <strong>Estimated Toll Earnings:</strong> {bridge.tollCharge}
           </p>
         </div>
+      </div>
+      <div className="backButton">
+        <button>
+          <Link to="/bridges">Back</Link>
+        </button>
       </div>
     </>
   )
