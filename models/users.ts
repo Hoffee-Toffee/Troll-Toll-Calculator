@@ -4,6 +4,7 @@ export interface User {
   firstName: string
   lastName: string
   auth0Id: string
+  activeBridgeId: number | null
 }
 
 export interface AuthUser {

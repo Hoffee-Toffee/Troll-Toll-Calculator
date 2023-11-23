@@ -20,6 +20,7 @@ export async function getUser(
       firstName: authUser.first_name,
       lastName: authUser.last_name,
       auth0Id: authUser.auth0_id,
+      activeBridgeId: null,
     }
   }
 
