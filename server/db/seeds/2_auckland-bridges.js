@@ -9,7 +9,7 @@ export async function seed(knex) {
       lanes: 8,
       added_by_user: 1,
       toll_charge: 2.5,
-      image_url: '../public/bridgesimg/auckland-harbour-bridge.jpg',
+      image_url: 'auckland-harbour-bridge.jpg',
     },
     {
       name: 'Grafton Bridge',
@@ -20,7 +20,7 @@ export async function seed(knex) {
       lanes: 4,
       added_by_user: 1,
       toll_charge: 2.5,
-      image_url: '../public/bridgesimg/grafton-bridge.jpg',
+      image_url: 'grafton-bridge.jpg',
     },
     {
       name: 'Jacobs Ladder Bridge',
@@ -31,7 +31,7 @@ export async function seed(knex) {
       lanes: 1,
       added_by_user: 1,
       toll_charge: 2.5,
-      image_url: '../public/bridgesimg/jacobs-ladder-bridge.jpg',
+      image_url: 'jacobs-ladder-bridge.jpg',
     },
     {
       name: 'Māngere Bridge',
@@ -41,7 +41,7 @@ export async function seed(knex) {
       length_meters: 300,
       added_by_user: 1,
       toll_charge: 2.5,
-      image_url: '../public/bridgesimg/mangere-bridge.jpg',
+      image_url: 'mangere-bridge.jpg',
     },
     {
       name: 'Newmarket Viaduct',
@@ -51,7 +51,7 @@ export async function seed(knex) {
       length_meters: 500,
       added_by_user: 1,
       toll_charge: 2.5,
-      image_url: '../public/bridgesimg/newmarket-viaduct.jpg',
+      image_url: 'newmarket-viaduct.jpg',
     },
     {
       name: 'Onehunga Harbour Road Bridge',
@@ -62,7 +62,7 @@ export async function seed(knex) {
       lanes: 2,
       added_by_user: 1,
       toll_charge: 2.5,
-      image_url: '../public/bridgesimg/onehunga-roadbridge.jpg',
+      image_url: 'onehunga-roadbridge.jpg',
     },
     {
       name: 'Onepoto Bridge',
@@ -72,7 +72,7 @@ export async function seed(knex) {
       length_meters: 80,
       added_by_user: 1,
       toll_charge: 2.5,
-      image_url: '../public/bridgesimg/onepoto-bridge.jpg',
+      image_url: 'onepoto-bridge.jpg',
     },
     {
       name: 'Panmure Bridge',
@@ -82,7 +82,7 @@ export async function seed(knex) {
       length_meters: 120,
       added_by_user: 1,
       toll_charge: 2.5,
-      image_url: '../public/bridgesimg/panmure-bridge.jpg',
+      image_url: 'panmure-bridge.jpg',
     },
     {
       name: 'Tāmaki Bridge',
@@ -92,7 +92,7 @@ export async function seed(knex) {
       length_meters: 90,
       added_by_user: 1,
       toll_charge: 2.5,
-      image_url: '../public/bridgesimg/tamaki-bridge.jpg',
+      image_url: 'tamaki-bridge.jpg',
     },
     {
       name: 'Upper Harbour Bridge',
@@ -102,7 +102,7 @@ export async function seed(knex) {
       length_meters: 200,
       added_by_user: 1,
       toll_charge: 2.5,
-      image_url: '../public/bridgesimg/upper-harbour-bridge.jpg',
+      image_url: 'upper-harbour-bridge.jpg',
     },
     {
       name: 'Victoria Park Viaduct',
@@ -112,7 +112,7 @@ export async function seed(knex) {
       length_meters: 350,
       added_by_user: 1,
       toll_charge: 2.5,
-      image_url: '../public/bridgesimg/victoria-park-viaduct.jpg',
+      image_url: 'victoria-park-viaduct.jpg',
     },
     {
       name: 'Westgate Pedestrian and Cycle Bridge',
@@ -122,7 +122,7 @@ export async function seed(knex) {
       length_meters: 120,
       added_by_user: 1,
       toll_charge: 2.5,
-      image_url: '../public/bridgesimg/westgate-bridge.jpg',
+      image_url: 'westgate-bridge.jpg',
     },
     {
       name: 'Wynyard Crossing',
@@ -132,7 +132,7 @@ export async function seed(knex) {
       length_meters: 60,
       added_by_user: 1,
       toll_charge: 2.5,
-      image_url: '../public/bridgesimg/wynward-crossing.jpg',
+      image_url: 'wynward-crossing.jpg',
     },
   ])
 }
