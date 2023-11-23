@@ -1,25 +1,6 @@
 import { Link } from 'react-router-dom'
-// import { useAuth0 } from '@auth0/auth0-react'
-// import { useAuthorisedRequest } from '../useAuthorisedRequest'
 
 export default function Home() {
-  // const { user } = useAuth0()
-
-  // const request = useAuthorisedRequest(
-  //   'post',
-  //   '/api/v1/auth',
-  //   JSON.stringify({
-  //     email: user?.email,
-  //     first_name: user?.given_name || user?.nickname,
-  //     last_name: user?.family_name || user?.nickname,
-  //     auth0_id: user?.sub,
-  //   })
-  // )
-
-  // async function onClick() {
-  //   console.log((await (await request)()).body)
-  // }
-
   return (
     <>
       <h1 className="main-title">
@@ -32,7 +13,6 @@ export default function Home() {
             Bridge List
           </Link>
         </button>
-        {/* <button onClick={onClick}>Click ME!</button> */}
       </div>
     </>
   )

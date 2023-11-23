@@ -13,3 +13,12 @@ export interface AuthUser {
   first_name: string
   last_name: string
 }
+
+export interface RawAuthUser {
+  auth0_id: string
+  email: string
+  given_name: string
+  family_name: string
+  sub: string
+  nickname: string
+}
