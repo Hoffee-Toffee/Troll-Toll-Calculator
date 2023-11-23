@@ -53,7 +53,7 @@ export default function SingleBridge() {
 
       <div className="single-bridge-container">
         <div className="single-bridge-left-div">
-          <img src={bridge.imageUrl} alt={bridge.name}></img>
+          <img src={`/bridgesimg/${bridge.imageUrl}`} alt={bridge.name}></img>
         </div>
         <div className="right-bridge-right-div">
           <p>

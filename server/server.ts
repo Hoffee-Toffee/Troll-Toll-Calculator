@@ -10,6 +10,7 @@ const __filename = URL.fileURLToPath(import.meta.url)
 const __dirname = Path.dirname(__filename)
 
 const server = express()
+server.use(express.urlencoded({ extended: true }))
 
 server.use(express.json())
 server.use(express.static(Path.join(__dirname, 'public')))
