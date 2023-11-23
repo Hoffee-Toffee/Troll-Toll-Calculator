@@ -4,7 +4,7 @@ export async function up(knex) {
     table.string('email')
     table.string('first_name')
     table.string('last_name')
-    table.integer('auth0_id')
+    table.string('auth0_id')
   })
 }
 
