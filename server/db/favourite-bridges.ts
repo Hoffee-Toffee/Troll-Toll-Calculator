@@ -14,8 +14,8 @@ export async function addFavBridgeDb(
 ): Promise<FavouriteBridge[]> {
   try {
     return db('favourite-bridges').insert(favBridge)
-  } catch (err: any) {
-    console.log(err.message)
-    return err.message
+  } catch (error: any) {
+    console.log(error.message)
+    return error.message
   }
 }

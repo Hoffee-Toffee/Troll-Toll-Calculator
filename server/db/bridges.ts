@@ -12,7 +12,10 @@ export async function getAllBridgesDb(db = connection): Promise<Bridge[]> {
     ' lanes',
     ' added_by_user as addByUser',
     ' toll_charge as tollCharge',
-    'image_url as imageUrl'
+    'image_url as imageUrl',
+    'origin',
+    'busyness',
+    'destination'
   )
 }
 
@@ -31,7 +34,10 @@ export async function getBridgeByIdDb(
       ' lanes',
       ' added_by_user as addByUser',
       ' toll_charge as tollCharge',
-      'image_url as imageUrl'
+      'image_url as imageUrl',
+      'origin',
+      'busyness',
+      'destination'
     )
     .where('id', id)
     .first()

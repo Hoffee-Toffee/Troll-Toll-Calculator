@@ -10,6 +10,9 @@ export async function up(knex) {
     table.integer('added_by_user').references('users.id')
     table.decimal('toll_charge')
     table.string('image_url')
+    table.integer('busyness')
+    table.string('origin')
+    table.string('destination')
   })
 }
 
