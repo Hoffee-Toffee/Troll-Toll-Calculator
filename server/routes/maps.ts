@@ -25,7 +25,6 @@ router.get('/:id', async (req, res) => {
   // We want to calculate this, based on lanes +
 
   const bridge = await dbBridge.getBridgeByIdDb(Number(req.params.id))
-  const multiplier = 1000
 
   let estimate = 0
 
@@ -78,7 +77,7 @@ router.get('/:id', async (req, res) => {
 
     estimate = ((parseDuration(response.body.routes[0].duration) /
       Number(bridge.lengthMeters)) *
-      multiplier *
+      bridge.busyness *
       bridge.busyness *
       bridge.lanes) as number
 
