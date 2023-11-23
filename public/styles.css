@@ -351,3 +351,9 @@ footer span {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+@keyframes blinkingText {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}

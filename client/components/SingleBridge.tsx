@@ -7,6 +7,9 @@ import { useState } from 'react'
 
 export default function SingleBridge() {
   const { id } = useParams()
+  const blinkStyle = {
+    animation: 'blinkingText 1.2s infinite',
+  }
 
   const [estimate, setEstimate] = useState(0)
 
@@ -75,7 +78,13 @@ export default function SingleBridge() {
             <strong>Year Built:</strong> {bridge.yearBuilt}
           </p>
           <p>
-            <strong>Estimated Toll Earnings:</strong>{' '}
+            <strong>
+              <span style={{ color: 'red', fontWeight: 'bold', ...blinkStyle }}>
+                LIVE
+              </span>{' '}
+              Estimated Toll Earnings:
+            </strong>
+
             {estimate === 0 ? 'unknown' : `${Math.ceil(estimate)}Ȼ`}
           </p>
           <p>
