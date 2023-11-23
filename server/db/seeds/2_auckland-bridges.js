@@ -11,6 +11,8 @@ export async function seed(knex) {
       toll_charge: 2.5,
       image_url: '../public/bridgesimg/auckland-harbour-bridge.jpg',
       busyness: 100,
+      origin: '-36.82067236081737,174.75008944247077',
+      destination: '36.8370245326167,174.74172861970737',
     },
     {
       name: 'Grafton Bridge',
@@ -23,6 +25,8 @@ export async function seed(knex) {
       toll_charge: 2.5,
       image_url: '../public/bridgesimg/grafton-bridge.jpg',
       busyness: 40,
+      origin: '-36.85847087135433,174.7636892283512',
+      destination: '-36.86033028619136,174.76682777998548',
     },
     {
       name: 'Jacobs Ladder Bridge',
@@ -30,7 +34,6 @@ export async function seed(knex) {
       type: 'Pedestrian bridge',
       year_built: 2000,
       length_meters: 50,
-      lanes: 1,
       added_by_user: 1,
       toll_charge: 2.5,
       image_url: '../public/bridgesimg/jacobs-ladder-bridge.jpg',
@@ -46,6 +49,8 @@ export async function seed(knex) {
       toll_charge: 2.5,
       image_url: '../public/bridgesimg/mangere-bridge.jpg',
       busyness: 14,
+      origin: '-36.93607851977716,174.78922500539352',
+      destination: '-36.930275971075915,174.78519148256817',
     },
     {
       name: 'Newmarket Viaduct',
@@ -58,6 +63,8 @@ export async function seed(knex) {
       toll_charge: 2.5,
       image_url: '../public/bridgesimg/newmarket-viaduct.jpg',
       busyness: 60,
+      origin: '-36.87013981482671,174.77190593112167',
+      destination: '-36.87710595823875,174.7819763801974',
     },
     {
       name: 'Onehunga Harbour Road Bridge',
@@ -69,6 +76,8 @@ export async function seed(knex) {
       toll_charge: 2.5,
       image_url: '../public/bridgesimg/onehunga-roadbridge.jpg',
       busyness: 5,
+      origin: '-36.93607851977716,174.78922500539352',
+      destination: '-36.930275971075915,174.78519148256817',
     },
     {
       name: 'Onepoto Bridge',
@@ -92,9 +101,11 @@ export async function seed(knex) {
       toll_charge: 2.5,
       image_url: '../public/bridgesimg/panmure-bridge.jpg',
       busyness: 25,
+      origin: '-36.90968837529957,174.8595350733492',
+      destination: 'd -36.907143030552554,174.85724335816198',
     },
     {
-      name: 'Tāmaki Bridge',
+      name: 'Waipuna Bridge',
       location: 'Tāmaki',
       lanes: 3,
       type: 'Bridge type',
@@ -104,6 +115,8 @@ export async function seed(knex) {
       toll_charge: 2.5,
       image_url: '../public/bridgesimg/tamaki-bridge.jpg',
       busyness: 25,
+      origin: '-36.91325719068416,174.8614666430839',
+      destination: '-36.91114861321223,174.8549395686055',
     },
     {
       name: 'Upper Harbour Bridge',
@@ -116,6 +129,8 @@ export async function seed(knex) {
       toll_charge: 2.5,
       image_url: '../public/bridgesimg/upper-harbour-bridge.jpg',
       busyness: 45,
+      origin: '-36.788140726177694,174.65904809049823',
+      destination: '-36.78387397864176,174.6717828672585',
     },
     {
       name: 'Victoria Park Viaduct',
@@ -128,6 +143,8 @@ export async function seed(knex) {
       toll_charge: 2.5,
       image_url: '../public/bridgesimg/victoria-park-viaduct.jpg',
       busyness: 17,
+      origin: '-36.8450942936357,174.75266608058828',
+      destination: '-36.84948040167459,174.7535174154923',
     },
     {
       name: 'Westgate Pedestrian and Cycle Bridge',

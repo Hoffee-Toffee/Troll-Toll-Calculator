@@ -9,5 +9,5 @@ export interface Bridge {
   addedByUser: string
   tollCharge: number
   imageUrl: string
-  business: number
+  busyness: number
 }
