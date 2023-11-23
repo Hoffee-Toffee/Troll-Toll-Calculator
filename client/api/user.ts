@@ -1,4 +1,4 @@
-import { RawAuthUser, User } from '../../models/users'
+import { User } from '../../models/users'
 
 export async function UserApi(request: any): Promise<User> {
   try {

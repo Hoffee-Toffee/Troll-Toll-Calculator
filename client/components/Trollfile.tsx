@@ -1,14 +1,11 @@
-//import { useParams } from 'react-router-dom'
-//import { useQuery } from '@tanstack/react-query'
 import { useAuthorisedRequest } from '../useAuthorisedRequest'
 import { useAuth0 } from '@auth0/auth0-react'
-import { RawAuthUser, User } from '../../models/users'
+import { User } from '../../models/users'
 import { useQuery } from '@tanstack/react-query'
 import { UserApi } from '../api/user'
 
 export default function Trollfile() {
   const { user: authUser } = useAuth0()
-  console.log(authUser)
 
   const request = useAuthorisedRequest(
     'post',
@@ -35,31 +32,11 @@ export default function Trollfile() {
   })
 
   if (isError) {
-    return <p>Your Trollfile can't be found! What a massive error</p>
+    return <p>Your Trollfile cannot be found! What a massive error</p>
   }
   if (!user || isLoading) {
     return <p>Fetching Trollfile...</p>
   }
-
-  // const {
-  //   data: user,
-  //   isError,
-  //   isLoading,
-  // }: {
-  //   data: User | undefined
-  //   isError: boolean
-  //   isLoading: boolean
-  // } = useQuery({
-  //   queryKey: ['user', id],
-  //   queryFn: () => getSingleUserApi(Number(id)),
-  // })
-
-  // if (isError) {
-  //   return <p>Your bridges are gone! What a massive error</p>
-  // }
-  // if (!user || isLoading) {
-  //   return <p>Fetching bridges from auckland...</p>
-  // }
 
   return (
     <>
