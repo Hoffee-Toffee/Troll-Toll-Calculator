@@ -6,17 +6,21 @@ export async function getUser(
   db = connection
 ): Promise<User> {
   // Get user if existing
-  let user = await db('users')
-    .select('id')
+  const user = await db('users')
+    .select('id', 'first_name as firstName', 'email', 'last_name as lastName')
     .where('auth0_id', authUser.auth0_id)
     .first()
 
   if (!user) {
     // If not then add to database, then return that new record
-    user = await db('users').select('id').insert(authUser)
-    user = user[0]
-  } else {
-    user = user.id
+    const userId = await db('users').select('id').insert(authUser)
+    return {
+      id: userId[0],
+      email: authUser.email,
+      firstName: authUser.first_name,
+      lastName: authUser.last_name,
+      auth0Id: authUser.auth0_id,
+    }
   }
 
   return user

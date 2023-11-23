@@ -32,6 +32,7 @@ export default function Home() {
             Bridge List
           </Link>
         </button>
+        {/* <button onClick={onClick}>Click ME!</button> */}
       </div>
     </>
   )
