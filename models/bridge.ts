@@ -10,4 +10,6 @@ export interface Bridge {
   tollCharge: number
   imageUrl: string
   busyness: number
+  origin: string | null
+  destination: string | null
 }
