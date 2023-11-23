@@ -25,7 +25,6 @@ export function SignOut() {
       <span>
         <a onClick={OnSignOut}>Sign Out</a>
       </span>
-      {/* <button onClick={OnGetRequest}>Create Get get request</button> */}
     </IfAuthenticated>
   )
 }
