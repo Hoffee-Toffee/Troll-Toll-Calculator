@@ -8,8 +8,6 @@ export default function Home() {
       </h1>
 
       <div id="buttons-container">
-        {/* <button id="sign-in-button">Log In</button>
-        <button id="sign-up-button">Sign Up</button> */}
         <button className="bridges-button">
           <Link style={{ textDecoration: 'none' }} to="/bridges">
             Bridge List
