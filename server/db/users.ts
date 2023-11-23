@@ -21,3 +21,25 @@ export async function getUser(
 
   return user
 }
+
+export async function getActiveBridge(userId: number, db = connection) {
+  //get user with ID
+  //use userId to join to fav bridge
+
+  return db('bridges')
+    .select(
+      'bridges.id as id',
+      ' name',
+      ' location',
+      ' type',
+      '  year_built as yearBuilt',
+      ' length_meters as lengthMeters',
+      ' lanes',
+      ' added_by_user as addByUser',
+      ' toll_charge as tollCharge',
+      'image_url as imageUrl'
+    )
+    .join('users', 'users.active_bridge_id', 'bridges.id')
+    .where('users.id', userId)
+    .first()
+}

@@ -1,6 +1,7 @@
 export async function up(knex) {
   await knex.schema.createTable('users', (table) => {
     table.increments('id').primary()
+    table.integer('active_bridge_id').nullable()
     table.string('email')
     table.string('first_name')
     table.string('last_name')

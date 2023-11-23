@@ -26,4 +26,19 @@ router.post('/', checkJwt, async (req: JwtRequest, res) => {
   }
 })
 
+// Get active bridge route
+
+// GET /api/v1/auth/:id/active
+
+router.get('/:id/active', async (req, res) => {
+  const userId = Number(req.params.id)
+  try {
+    const activeBridge = await db.getActiveBridge(userId)
+    res.json(activeBridge)
+  } catch (error) {
+    console.error(error)
+    res.status(500).send('Something went wrong')
+  }
+})
+
 export default router
