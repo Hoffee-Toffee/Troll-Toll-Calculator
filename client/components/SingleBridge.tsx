@@ -76,7 +76,7 @@ export default function SingleBridge() {
           </p>
           <p>
             <strong>Estimated Toll Earnings:</strong>{' '}
-            {estimate === 0 ? 'unknown' : `${Math.floor(estimate)}Ȼ`}
+            {estimate === 0 ? 'unknown' : `${Math.ceil(estimate)}Ȼ`}
           </p>
           <p>
             <strong>Estimated Traffic:</strong> {bridge.busyness}
