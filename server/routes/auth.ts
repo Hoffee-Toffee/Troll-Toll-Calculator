@@ -1,6 +1,6 @@
 import express from 'express'
 
-import * as db from '../db/bridges.ts'
+import * as db from '../db/users.ts'
 import checkJwt, { JwtRequest } from '../auth0.ts'
 
 const router = express.Router()
@@ -13,16 +13,14 @@ router.get('/', checkJwt, async (req: JwtRequest, res) => {
     console.error('No auth0Id')
     return res.status(401).send('Unauthorized')
   }
-  return res.status(201).send('Testing')
 
-  // try {
-  //   const bridges = await db.getBridges()
-
-  //   res.json(bridges)
-  // } catch (error) {
-  //   console.error(error)
-  //   res.status(500).send('Something went wrong')
-  // }
+  try {
+    const user = await db.getUser(auth0Id)
+    res.json(user)
+  } catch (error) {
+    console.error(error)
+    res.status(500).send('Something went wrong')
+  }
 })
 
 export default router

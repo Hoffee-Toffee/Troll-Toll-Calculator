@@ -1,6 +1,14 @@
 import { Link } from 'react-router-dom'
 
+import { useAuthorisedRequest } from '../useAuthorisedRequest'
+
 export default function Home() {
+  const request = useAuthorisedRequest('get', '/api/v1/auth', '')
+
+  async function onClick() {
+    console.log((await (await request)()).body)
+  }
+
   return (
     <>
       <h1 className="main-title">
@@ -15,6 +23,7 @@ export default function Home() {
             Bridge List
           </Link>
         </button>
+        <button onClick={onClick}>Click ME!!!</button>
       </div>
     </>
   )
