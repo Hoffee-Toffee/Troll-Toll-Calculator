@@ -4,7 +4,7 @@
 
 ## Preface
 
-This is a teacher-led group project that I collaborated on at Dev Academy. It was a great opportunity to practise our teamwork and technical skills in the lead up to our final projects. By the end of it, we had achieved our MVP and several of the stretch objectives listed below. The process was a celebration of comprehensive design-led planning, and using clear documentation to achieve a product that we were proud of within the given timeframe. We engaged in discussions about stress profiles, articulating our individual learning goals, and utilizing our roles within the team.
+This was a teacher-led group project that I collaborated on at Dev Academy. It was a great opportunity to practise our teamwork and technical skills in the lead up to our final projects. By the end of it, we had achieved our MVP and several of the stretch objectives listed below. The process was a celebration of comprehensive design-led planning, and using clear documentation to achieve a product that we were proud of within the given timeframe. We engaged in discussions about stress profiles, articulating our individual learning goals, and utilizing our roles within the team.
 
 ## Product background
 
