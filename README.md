@@ -1,6 +1,22 @@
 # Bridge Troll Toll Calculator
 
-## Week 7 Large group project
+## Dev Academy group project
+
+## Setup
+
+Run the following commands in your terminal:
+
+```sh
+npm install
+npm run knex migrate:latest
+npm run knex seed:run
+```
+
+To run in development:
+
+```sh
+npm run dev
+```
 
 ## Preface
 
@@ -75,8 +91,6 @@ A registered toll operator user should be able to:
 - Receive automated recommendations for adjusting toll rates during peak hours.
 - See any other live analytics that might increase toll revenue and how they trend over time.
 - Automate every time I would take a toll at my current active bridge.
-
-## Documentation
 
 ## Workflow
 
@@ -288,25 +302,6 @@ There are two helper components that will render their children conditionally.
 </IfNotAuthenticated>```
 ---
 
-## Setup
 
-Run the following commands in your terminal:
 
-```sh
-npm install
-npm run knex migrate:latest
-npm run knex seed:run
-cp .env.example .env
 ````
-
-To run in development:
-
-```sh
-npm run dev
-```
-
-To run in production:
-
-```sh
-npm start
-```
