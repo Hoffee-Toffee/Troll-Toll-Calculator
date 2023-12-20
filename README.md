@@ -56,8 +56,6 @@ Trolls have no use for our dollars and cents. We had to design a product using t
 - Product Owner- Blue
 - Git Keeper- Sofia
 
-## User Stories
-
 ### MVP
 
 A non-registered troll toll operator user should be able to:
@@ -68,7 +66,7 @@ A non-registered troll toll operator user should be able to:
 
 ### Stretch
 
-As registered troll toll operator user should be able to:
+Allow a registered troll toll operator user to:
 
 - Log in to their account set up using auth
 - Save their favourite bridges
@@ -77,14 +75,14 @@ As registered troll toll operator user should be able to:
 
 ### External API Stretch
 
-A registered toll operator user should be able to:
+Allow a registered troll toll operator user to:
 
 - See real live traffic data for each bridge
 - See how the traffic data influences how much troll money can be made at each bridge (this will replace the estimate in the MVP)
 
 ### Stretchier Stretch
 
-A registered toll operator user should be able to:
+Allow a registered troll toll operator user to:
 
 - Analyze toll collection trends based on different times of the day through visualisations.
 - Identify peak hours for each bridge to maximize revenue through visualisation.
