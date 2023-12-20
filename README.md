@@ -20,7 +20,7 @@ npm run dev
 
 ## Preface
 
-This was a teacher-led group project that I collaborated on at Dev Academy. It was a great opportunity to practise our teamwork and technical skills in the lead up to our final projects. By the end of it, we had achieved our MVP and several of the stretch objectives listed below. The process was a celebration of comprehensive design-led planning, and using clear documentation to achieve a product that we were proud of within the given timeframe. We engaged in discussions about stress profiles, articulating our individual learning goals, and utilizing our roles within the team.
+This was a multi-day, teacher-led group project that I collaborated on at Dev Academy. It was a great opportunity to practise our teamwork and full-stack technical skills in the lead up to our final projects. By the end of it, we had achieved our MVP and several of the stretch objectives listed below. The process was a celebration of comprehensive design-led planning, and using clear documentation to achieve a product that we were proud of within the given timeframe. We engaged in discussions about stress profiles, articulating our individual learning goals, and utilizing our roles within the team.
 
 ## Product background
 
@@ -37,24 +37,6 @@ Trolls have no use for our dollars and cents. We had to design a product using t
 - 1Ȼ is 1 troll rock candy, the smallest division of currency
 - 100 Rock Candies = 1 Gold Ring (AuR) : 10Ȼ = 1AuR
 - 100 Gold Rings = 1 Goat (GT) : 100AuR = 1 GT
-
-## The Tech
-
-- [React](https://reactjs.org/docs/getting-started.html)
-- [ReactQuery](https://tanstack.com/query/v4/docs/react/overview)
-- [Express](https://expressjs.com/en/api.html)
-- [Knex.js](https://knexjs.org/)
-- [Sass](https://sass-lang.com/)
-- [Auth0](https://auth0.com/)
-- [GoogleMapApis](https://developers.google.com/maps)
-
-## Roles
-
-- Team Lead - Gaby (Facilitator who set up the team, did code reviews and sent issues on github)
-- Scrum Facilitator - Ming/ Keeley
-- Vibe Watcher- Anthony
-- Product Owner- Blue
-- Git Keeper- Sofia
 
 ### MVP
 
@@ -78,7 +60,7 @@ Allow a registered troll toll operator user to:
 Allow a registered troll toll operator user to:
 
 - See real live traffic data for each bridge
-- See how the traffic data influences how much troll money can be made at each bridge (this will replace the estimate in the MVP)
+- See how the traffic data influences how much troll money can be made at each bridge (to replace the estimate in the MVP)
 
 ### Stretchier Stretch
 
@@ -88,7 +70,25 @@ Allow a registered troll toll operator user to:
 - Identify peak hours for each bridge to maximize revenue through visualisation.
 - Receive automated recommendations for adjusting toll rates during peak hours.
 - See any other live analytics that might increase toll revenue and how they trend over time.
-- Automate every time I would take a toll at my current active bridge.
+- Automate every time a toll was taken at the current active bridge.
+
+## The Tech
+
+- [React](https://reactjs.org/docs/getting-started.html)
+- [ReactQuery](https://tanstack.com/query/v4/docs/react/overview)
+- [Express](https://expressjs.com/en/api.html)
+- [Knex.js](https://knexjs.org/)
+- [Sass](https://sass-lang.com/)
+- [Auth0](https://auth0.com/)
+- [GoogleMapApis](https://developers.google.com/maps)
+
+## Roles
+
+- Team Lead - Gaby (Facilitator who set up the team, did code reviews and sent issues on github)
+- Scrum Facilitator - Ming/ Keeley
+- Vibe Watcher- Anthony
+- Product Owner- Blue
+- Git Keeper- Sofia
 
 ## Workflow
 
